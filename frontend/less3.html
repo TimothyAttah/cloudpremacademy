@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Searchable Country Selector</title>
+  <!-- Select2 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+  <style>
+    .select2-container .select2-selection--single {
+      height: 40px;
+      padding: 6px;
+      font-size: 16px;
+    }
+
+    .flag-icon {
+      width: 20px;
+      height: 15px;
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+
+    .select2-results__option {
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Select Country</h2>
+
+  <select id="country-select" style="width: 300px;">
+    <option value="">-- Select Country --</option>
+    <option data-flag="us" value="+1">United States</option>
+    <option data-flag="gb" value="+44">United Kingdom</option>
+    <option data-flag="ca" value="+1">Canada</option>
+    <option data-flag="ng" value="+234">Nigeria</option>
+    <option data-flag="in" value="+91">India</option>
+    <option data-flag="de" value="+49">Germany</option>
+    <option data-flag="jp" value="+81">Japan</option>
+    <option data-flag="fr" value="+33">France</option>
+    <option data-flag="za" value="+27">South Africa</option>
+    <!-- Add more countries as needed -->
+  </select>
+
+  <br><br>
+
+  <label for="phone-code">Phone Code:</label>
+  <input type="text" id="phone-code" readonly placeholder="+___">
+
+  <!-- jQuery (required by Select2) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Select2 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+  <script>
+    function formatFlag(option) {
+      if (!option.id) return option.text;
+
+      const flagCode = $(option.element).data('flag');
+      if (!flagCode) return option.text;
+
+      const img = `<img src="https://flagcdn.com/16x12/${flagCode}.png" class="flag-icon" />`;
+      return $(`
+        <span>${img} ${option.text} (${option.element.value})</span>
+      `);
+    }
+
+    $('#country-select').select2({
+      templateResult: formatFlag,
+      templateSelection: formatFlag,
+      minimumResultsForSearch: 0
+    });
+
+    $('#country-select').on('change', function () {
+      const phoneCode = $(this).val();
+      $('#phone-code').val(phoneCode);
+    });
+  </script>
+
+</body>
+</html>

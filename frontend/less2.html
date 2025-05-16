@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Phone Code Selector with Flags</title>
+  <style>
+    select {
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <label for="country-select">Choose a country:</label>
+  <select id="country-select">
+    <option value="">--Select Country--</option>
+    <option value="+93">🇦🇫 Afghanistan</option>
+    <option value="+355">🇦🇱 Albania</option>
+    <option value="+213">🇩🇿 Algeria</option>
+    <option value="+376">🇦🇩 Andorra</option>
+    <option value="+244">🇦🇴 Angola</option>
+    <option value="+1-268">🇦🇬 Antigua and Barbuda</option>
+    <option value="+54">🇦🇷 Argentina</option>
+    <option value="+374">🇦🇲 Armenia</option>
+    <option value="+61">🇦🇺 Australia</option>
+    <option value="+43">🇦🇹 Austria</option>
+    <option value="+994">🇦🇿 Azerbaijan</option>
+    <option value="+973">🇧🇭 Bahrain</option>
+    <option value="+880">🇧🇩 Bangladesh</option>
+    <option value="+1-246">🇧🇧 Barbados</option>
+    <option value="+375">🇧🇾 Belarus</option>
+    <option value="+32">🇧🇪 Belgium</option>
+    <option value="+1">🇨🇦 Canada</option>
+    <option value="+86">🇨🇳 China</option>
+    <option value="+91">🇮🇳 India</option>
+    <option value="+81">🇯🇵 Japan</option>
+    <option value="+254">🇰🇪 Kenya</option>
+    <option value="+234">🇳🇬 Nigeria</option>
+    <option value="+92">🇵🇰 Pakistan</option>
+    <option value="+974">🇶🇦 Qatar</option>
+    <option value="+966">🇸🇦 Saudi Arabia</option>
+    <option value="+27">🇿🇦 South Africa</option>
+    <option value="+82">🇰🇷 South Korea</option>
+    <option value="+34">🇪🇸 Spain</option>
+    <option value="+41">🇨🇭 Switzerland</option>
+    <option value="+971">🇦🇪 UAE</option>
+    <option value="+44">🇬🇧 United Kingdom</option>
+    <option value="+1">🇺🇸 United States</option>
+  </select>
+
+  <br><br>
+
+  <label for="phone-code">Phone Code:</label>
+  <input type="text" id="phone-code" readonly placeholder="+___">
+
+  <script>
+    const countrySelect = document.getElementById('country-select');
+    const phoneCodeInput = document.getElementById('phone-code');
+
+    countrySelect.addEventListener('change', function () {
+      phoneCodeInput.value = this.value;
+    });
+  </script>
+</body>
+</html>

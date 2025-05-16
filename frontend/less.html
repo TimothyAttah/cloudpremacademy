@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Auto-Fill Phone Code</title>
+</head>
+<body>
+  <label for="country-select">Choose a country:</label>
+  <select id="country-select">
+    <option value="">--Select Country--</option>
+    <option value="+93">Afghanistan</option>
+    <option value="+355">Albania</option>
+    <option value="+213">Algeria</option>
+    <option value="+376">Andorra</option>
+    <option value="+244">Angola</option>
+    <option value="+1-268">Antigua and Barbuda</option>
+    <option value="+54">Argentina</option>
+    <option value="+374">Armenia</option>
+    <option value="+61">Australia</option>
+    <option value="+43">Austria</option>
+    <option value="+994">Azerbaijan</option>
+    <option value="+973">Bahrain</option>
+    <option value="+880">Bangladesh</option>
+    <option value="+1-246">Barbados</option>
+    <option value="+375">Belarus</option>
+    <option value="+32">Belgium</option>
+    <option value="+501">Belize</option>
+    <option value="+229">Benin</option>
+    <option value="+975">Bhutan</option>
+    <option value="+591">Bolivia</option>
+    <option value="+387">Bosnia and Herzegovina</option>
+    <option value="+267">Botswana</option>
+    <option value="+55">Brazil</option>
+    <option value="+673">Brunei</option>
+    <option value="+359">Bulgaria</option>
+    <option value="+226">Burkina Faso</option>
+    <option value="+257">Burundi</option>
+    <option value="+855">Cambodia</option>
+    <option value="+237">Cameroon</option>
+    <option value="+1">Canada</option>
+    <!-- Add more countries as needed -->
+    <option value="+971">United Arab Emirates</option>
+    <option value="+44">United Kingdom</option>
+    <option value="+1">United States</option>
+  </select>
+
+  <br><br>
+
+  <label for="phone-code">Phone Code:</label>
+  <input type="text" id="phone-code" readonly placeholder="+___">
+
+  <script>
+    const countrySelect = document.getElementById('country-select');
+    const phoneCodeInput = document.getElementById('phone-code');
+
+    countrySelect.addEventListener('change', function () {
+      phoneCodeInput.value = this.value;
+    });
+  </script>
+
+| Country      | Time Difference | 7–12am NG | 2–5pm NG | 7–9pm NG |
+| ------------ | --------------- | --------- | -------- | -------- |
+| UK           | 0 hrs           | 7–12am    | 2–5pm    | 7–9pm    |
+| US (ET)      | -5 hrs          | 2–7am     | 9–12pm   | 2–4pm    |
+| US (CT)      | -6 hrs          | 1–6am     | 8–11am   | 1–3pm    |
+| Brazil (BRT) | -4 hrs          | 3–8am     | 10–1pm   | 3–5pm    |
+| Spain        | +1 hr           | 8–1pm     | 3–6pm    | 8–10pm   |
+| South Africa | +1 hr           | 8–1pm     | 3–6pm    | 8–10pm   |
+
+</body>
+</html>
