@@ -25,6 +25,15 @@ const UserSchema = new mongoose.Schema(
     course: {
       type: String,
     },
+    nigeria_time: {
+      type: String,
+    },
+    uk_time: {
+      type: String,
+    },
+    sa_time: {
+      type: String,
+    },
   },
   { timestamps: true },
 );

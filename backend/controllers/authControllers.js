@@ -5,8 +5,17 @@ import jwt from 'jsonwebtoken';
 const authControllers = {
   signUp: async (req, res) => {
     try {
-      const { firstName, lastName, email, phoneNumber, country, course } =
-        req.body;
+      const {
+        firstName,
+        lastName,
+        email,
+        phoneNumber,
+        country,
+        course,
+        nigeria_time,
+        uk_time,
+        sa_time,
+      } = req.body;
 
       // if (
       //   !firstName ||
@@ -16,7 +25,7 @@ const authControllers = {
       //   !country ||
       //   !course
       // )
-       // return res.status(400).json({ msg: 'Please fill in all fields.' });
+      // return res.status(400).json({ msg: 'Please fill in all fields.' });
 
       if (!firstName)
         return res.status(400).json({ msg: 'Please enter your first name.' });
@@ -36,8 +45,8 @@ const authControllers = {
       if (!course)
         return res.status(400).json({ msg: 'Please choose a course.' });
 
-
-
+      if (!nigeria_time && !uk_time && !sa_time)
+        return res.status(400).json({ msg: 'Please choose a timezone.' });
 
       const user = await User.findOne({ email });
       if (user)
@@ -50,9 +59,12 @@ const authControllers = {
         phoneNumber,
         country,
         course,
+        nigeria_time,
+        uk_time,
+        sa_time,
       });
 
-      // await newUser.save();
+      await newUser.save();
 
       return res
         .status(201)

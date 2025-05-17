@@ -69,6 +69,10 @@ btnSubmit.addEventListener('click', (e) => {
   const phoneNumber = document.querySelector('.phoneNumber');
   const country = document.querySelector('.country');
   const course = document.querySelector('.course');
+  const nigeria_time = document.querySelector('.nigeria_time');
+  const uk_time = document.querySelector('.uk_time');
+  const sa_time = document.querySelector('.sa_time');
+
 
 
 
@@ -78,7 +82,10 @@ btnSubmit.addEventListener('click', (e) => {
     email: email.value,
     phoneNumber: phoneNumber.value,
     country: country.value,
-    course: course.value
+    course: course.value,
+    nigeria_time: nigeria_time.value,
+    uk_time: uk_time.value,
+    sa_time: sa_time.value
   };
 
   fetch('http://localhost:8080/api/auth/register', {
