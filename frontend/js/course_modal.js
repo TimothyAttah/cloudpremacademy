@@ -58,7 +58,6 @@
 //     })
 // })()
 
-
 const btnSubmit = document.getElementById('btn-submit');
 
 btnSubmit.addEventListener('click', (e) => {
@@ -73,9 +72,6 @@ btnSubmit.addEventListener('click', (e) => {
   const uk_time = document.querySelector('.uk_time');
   const sa_time = document.querySelector('.sa_time');
 
-
-
-
   const newStudent = {
     firstName: firstName.value,
     lastName: lastName.value,
@@ -85,13 +81,21 @@ btnSubmit.addEventListener('click', (e) => {
     course: course.value,
     nigeria_time: nigeria_time.value,
     uk_time: uk_time.value,
-    sa_time: sa_time.value
+    sa_time: sa_time.value,
   };
 
   fetch('https://cloudpremacademy-49q2.vercel.app/api/auth/register', {
-    method: 'POST',
+    // method: 'POST',
+    // headers: {
+    //   'Content-Type': 'application/json',
+    // },
+    mode: 'no-cors',
+    method: 'post',
     headers: {
+      'Access-Control-Allow-Headers': 'Content-Type',
+      'Access-Control-Allow-Origin': '*',
       'Content-Type': 'application/json',
+      'Access-Control-Allow-Methods': 'OPTIONS,POST,GET,PATCH',
     },
     body: JSON.stringify(newStudent),
   })
