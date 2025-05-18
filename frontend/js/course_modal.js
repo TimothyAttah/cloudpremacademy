@@ -90,12 +90,12 @@ btnSubmit.addEventListener('click', (e) => {
     //   'Content-Type': 'application/json',
     // },
     mode: 'no-cors',
-    method: 'post',
+    method: 'POST',
     headers: {
       'Access-Control-Allow-Headers': 'Content-Type',
       'Access-Control-Allow-Origin': '*',
       'Content-Type': 'application/json',
-      'Access-Control-Allow-Methods': 'OPTIONS,POST,GET,PATCH',
+      'Access-Control-Allow-Methods': 'POST,GET,PATCH',
     },
     body: JSON.stringify(newStudent),
   })
