@@ -88,24 +88,23 @@ btnSubmit.addEventListener('click', (e) => {
     sa_time: sa_time.value
   };
 
-  fetch('http://localhost:8080/api/auth/register', {
+  fetch('https://cloudpremacademy-49q2.vercel.app/api/auth/register', {
     method: 'POST',
     headers: {
-      'Content-Type': 'application/json'
+      'Content-Type': 'application/json',
     },
     body: JSON.stringify(newStudent),
-
   })
     .then((res) => {
       return res.json();
     })
     .then((data) => {
       console.log(data);
-      alert(data.msg)
+      alert(data.msg);
     })
     .catch((err) => {
       console.log(err.message);
-      alert(err.message)
+      alert(err.message);
     });
 
   console.log(newStudent);
