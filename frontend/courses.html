@@ -54,8 +54,8 @@
                     </ul>
                     <div class="top_bar_login ml-auto">
                       <ul>
-                        <li data-modal-target="#register_modal"><a href="#" >Register</a></li>
-                        <li><a href="#" data-modal-target="#login_modal">Login</a></li>
+                        <li ><a href="register.html" >Register</a></li>
+
                       </ul>
                     </div>
                   </div>
@@ -93,9 +93,6 @@
                       <li><a href="news.html">news</a></li>
                       <li><a href="contact.html">contact</a></li>
                     </ul>
-                    <div class="search_button">
-                      <i class="fa fa-search" aria-hidden="true"></i>
-                    </div>
 
                     <!-- Hamburger -->
 
@@ -110,31 +107,7 @@
         </div>
 
         <!-- Header Search Panel -->
-        <div class="header_search_container">
-          <div class="container">
-            <div class="row">
-              <div class="col">
-                <div
-                  class="header_search_content d-flex flex-row align-items-center justify-content-end"
-                >
-                  <form action="#" class="header_search_form">
-                    <input
-                      type="search"
-                      class="search_input"
-                      placeholder="Search"
-                      required="required"
-                    />
-                    <button
-                      class="header_search_button d-flex flex-column align-items-center justify-content-center"
-                    >
-                      <i class="fa fa-search" aria-hidden="true"></i>
-                    </button>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+
       </header>
 
       <!-- Menu -->
@@ -157,7 +130,7 @@
             <li class="menu_mm"><a href="#">Events</a></li>
             <li class="menu_mm"><a href="blog.html">Blog</a></li>
             <li class="menu_mm"><a href="contact.html">Contact</a></li>
-            <li class="menu_mm" data-modal-target="#register_modal"><a href="#" >Register</a></li>
+            <li class="menu_mm"><a href="register.html" >Register</a></li>
           </ul>
         </nav>
         <div class="menu_extra">
@@ -174,314 +147,6 @@
         </div>
       </div>
 
-      <div class="modal1 modal__form__container" id="register_modal">
-        <div class="modal__wrapper modal__form">
-          <button data-close-button class="close-btn">X</button>
-
-          <form class="row g-3 needs-validation main_form" novalidate>
-            <div class="mt-5 d-flex flex-row align-items-center form__box-wrapper" >
-
-              <div class="col-md-8">
-                <label for="validationCustom01" class="form-label">First name</label>
-                <input type="text" class="form-control firstName" id="validationCustom01" value="" name="firstName " required>
-                <div class="valid-feedback">
-                  Looks good!
-                </div>
-              </div>
-              <div class="col-md-8">
-                <label for="validationCustom02" class="form-label">Last name</label>
-                <input type="text" class="form-control lastName" id="validationCustom02" value="" name="lastName" required>
-                <div class="valid-feedback">
-                  Looks good!
-                </div>
-              </div>
-            </div>
-
-            <div class="mt-3 d-flex flex-row align-items-center form__box-wrapper"  >
-
-            <div class="col-md-8">
-              <label for="validationCustom03" class="form-label">Email</label>
-              <input type="text" class="form-control email" id="validationCustom03" value="" name="email" required>
-              <div class="valid-feedback">
-                Looks good!
-              </div>
-            </div>
-            <div class="col-md-8">
-              <label for="validationCustom04" class="form-label">Phone Number</label>
-              <input type="text" class="form-control phoneNumber" id="validationCustom04" value="" name="phoneNumber" required>
-              <div class="valid-feedback">
-                Looks good!
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-8 mt-2" >
-            <label for="country">Choose a country:</label>
-            <select name="country" id="country" class="country">
-              <option value="">--Select Country--</option>
-              <option value="Afghanistan">Afghanistan</option>
-              <option value="Albania">Albania</option>
-              <option value="Algeria">Algeria</option>
-              <option value="Andorra">Andorra</option>
-              <option value="Angola">Angola</option>
-              <option value="Antigua and Barbuda">Antigua and Barbuda</option>
-              <option value="Argentina">Argentina</option>
-              <option value="Armenia">Armenia</option>
-              <option value="Australia">Australia</option>
-              <option value="Austria">Austria</option>
-              <option value="Azerbaijan">Azerbaijan</option>
-              <option value="Bahamas">Bahamas</option>
-              <option value="Bahrain">Bahrain</option>
-              <option value="Bangladesh">Bangladesh</option>
-              <option value="Barbados">Barbados</option>
-              <option value="Belarus">Belarus</option>
-              <option value="Belgium">Belgium</option>
-              <option value="Belize">Belize</option>
-              <option value="Benin">Benin</option>
-              <option value="Bhutan">Bhutan</option>
-              <option value="Bolivia">Bolivia</option>
-              <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
-              <option value="Botswana">Botswana</option>
-              <option value="Brazil">Brazil</option>
-              <option value="Brunei">Brunei</option>
-              <option value="Bulgaria">Bulgaria</option>
-              <option value="Burkina Faso">Burkina Faso</option>
-              <option value="Burundi">Burundi</option>
-              <option value="Cabo Verde">Cabo Verde</option>
-              <option value="Cambodia">Cambodia</option>
-              <option value="Cameroon">Cameroon</option>
-              <option value="Canada">Canada</option>
-              <option value="Central African Republic">Central African Republic</option>
-              <option value="Chad">Chad</option>
-              <option value="Chile">Chile</option>
-              <option value="China">China</option>
-              <option value="Colombia">Colombia</option>
-              <option value="Comoros">Comoros</option>
-              <option value="Congo (Congo-Brazzaville)">Congo (Congo-Brazzaville)</option>
-              <option value="Costa Rica">Costa Rica</option>
-              <option value="Croatia">Croatia</option>
-              <option value="Cuba">Cuba</option>
-              <option value="Cyprus">Cyprus</option>
-              <option value="Czech Republic">Czech Republic</option>
-              <option value="Denmark">Denmark</option>
-              <option value="Djibouti">Djibouti</option>
-              <option value="Dominica">Dominica</option>
-              <option value="Dominican Republic">Dominican Republic</option>
-              <option value="Ecuador">Ecuador</option>
-              <option value="Egypt">Egypt</option>
-              <option value="El Salvador">El Salvador</option>
-              <option value="Equatorial Guinea">Equatorial Guinea</option>
-              <option value="Eritrea">Eritrea</option>
-              <option value="Estonia">Estonia</option>
-              <option value="Eswatini">Eswatini</option>
-              <option value="Ethiopia">Ethiopia</option>
-              <option value="Fiji">Fiji</option>
-              <option value="Finland">Finland</option>
-              <option value="France">France</option>
-              <option value="Gabon">Gabon</option>
-              <option value="Gambia">Gambia</option>
-              <option value="Georgia">Georgia</option>
-              <option value="Germany">Germany</option>
-              <option value="Ghana">Ghana</option>
-              <option value="Greece">Greece</option>
-              <option value="Grenada">Grenada</option>
-              <option value="Guatemala">Guatemala</option>
-              <option value="Guinea">Guinea</option>
-              <option value="Guinea-Bissau">Guinea-Bissau</option>
-              <option value="Guyana">Guyana</option>
-              <option value="Haiti">Haiti</option>
-              <option value="Honduras">Honduras</option>
-              <option value="Hungary">Hungary</option>
-              <option value="Iceland">Iceland</option>
-              <option value="India">India</option>
-              <option value="Indonesia">Indonesia</option>
-              <option value="Iran">Iran</option>
-              <option value="Iraq">Iraq</option>
-              <option value="Ireland">Ireland</option>
-              <option value="Israel">Israel</option>
-              <option value="Italy">Italy</option>
-              <option value="Jamaica">Jamaica</option>
-              <option value="Japan">Japan</option>
-              <option value="Jordan">Jordan</option>
-              <option value="Kazakhstan">Kazakhstan</option>
-              <option value="Kenya">Kenya</option>
-              <option value="Kiribati">Kiribati</option>
-              <option value="Kuwait">Kuwait</option>
-              <option value="Kyrgyzstan">Kyrgyzstan</option>
-              <option value="Laos">Laos</option>
-              <option value="Latvia">Latvia</option>
-              <option value="Lebanon">Lebanon</option>
-              <option value="Lesotho">Lesotho</option>
-              <option value="Liberia">Liberia</option>
-              <option value="Libya">Libya</option>
-              <option value="Liechtenstein">Liechtenstein</option>
-              <option value="Lithuania">Lithuania</option>
-              <option value="Luxembourg">Luxembourg</option>
-              <option value="Madagascar">Madagascar</option>
-              <option value="Malawi">Malawi</option>
-              <option value="Malaysia">Malaysia</option>
-              <option value="Maldives">Maldives</option>
-              <option value="Mali">Mali</option>
-              <option value="Malta">Malta</option>
-              <option value="Marshall Islands">Marshall Islands</option>
-              <option value="Mauritania">Mauritania</option>
-              <option value="Mauritius">Mauritius</option>
-              <option value="Mexico">Mexico</option>
-              <option value="Micronesia">Micronesia</option>
-              <option value="Moldova">Moldova</option>
-              <option value="Monaco">Monaco</option>
-              <option value="Mongolia">Mongolia</option>
-              <option value="Montenegro">Montenegro</option>
-              <option value="Morocco">Morocco</option>
-              <option value="Mozambique">Mozambique</option>
-              <option value="Myanmar (Burma)">Myanmar (Burma)</option>
-              <option value="Namibia">Namibia</option>
-              <option value="Nauru">Nauru</option>
-              <option value="Nepal">Nepal</option>
-              <option value="Netherlands">Netherlands</option>
-              <option value="New Zealand">New Zealand</option>
-              <option value="Nicaragua">Nicaragua</option>
-              <option value="Niger">Niger</option>
-              <option value="Nigeria">Nigeria</option>
-              <option value="North Korea">North Korea</option>
-              <option value="North Macedonia">North Macedonia</option>
-              <option value="Norway">Norway</option>
-              <option value="Oman">Oman</option>
-              <option value="Pakistan">Pakistan</option>
-              <option value="Palau">Palau</option>
-              <option value="Palestine">Palestine</option>
-              <option value="Panama">Panama</option>
-              <option value="Papua New Guinea">Papua New Guinea</option>
-              <option value="Paraguay">Paraguay</option>
-              <option value="Peru">Peru</option>
-              <option value="Philippines">Philippines</option>
-              <option value="Poland">Poland</option>
-              <option value="Portugal">Portugal</option>
-              <option value="Qatar">Qatar</option>
-              <option value="Romania">Romania</option>
-              <option value="Russia">Russia</option>
-              <option value="Rwanda">Rwanda</option>
-              <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
-              <option value="Saint Lucia">Saint Lucia</option>
-              <option value="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option>
-              <option value="Samoa">Samoa</option>
-              <option value="San Marino">San Marino</option>
-              <option value="Sao Tome and Principe">Sao Tome and Principe</option>
-              <option value="Saudi Arabia">Saudi Arabia</option>
-              <option value="Senegal">Senegal</option>
-              <option value="Serbia">Serbia</option>
-              <option value="Seychelles">Seychelles</option>
-              <option value="Sierra Leone">Sierra Leone</option>
-              <option value="Singapore">Singapore</option>
-              <option value="Slovakia">Slovakia</option>
-              <option value="Slovenia">Slovenia</option>
-              <option value="Solomon Islands">Solomon Islands</option>
-              <option value="Somalia">Somalia</option>
-              <option value="South Africa">South Africa</option>
-              <option value="South Korea">South Korea</option>
-              <option value="South Sudan">South Sudan</option>
-              <option value="Spain">Spain</option>
-              <option value="Sri Lanka">Sri Lanka</option>
-              <option value="Sudan">Sudan</option>
-              <option value="Suriname">Suriname</option>
-              <option value="Sweden">Sweden</option>
-              <option value="Switzerland">Switzerland</option>
-              <option value="Syria">Syria</option>
-              <option value="Taiwan">Taiwan</option>
-              <option value="Tajikistan">Tajikistan</option>
-              <option value="Tanzania">Tanzania</option>
-              <option value="Thailand">Thailand</option>
-              <option value="Timor-Leste">Timor-Leste</option>
-              <option value="Togo">Togo</option>
-              <option value="Tonga">Tonga</option>
-              <option value="Trinidad and Tobago">Trinidad and Tobago</option>
-              <option value="Tunisia">Tunisia</option>
-              <option value="Turkey">Turkey</option>
-              <option value="Turkmenistan">Turkmenistan</option>
-              <option value="Tuvalu">Tuvalu</option>
-              <option value="Uganda">Uganda</option>
-              <option value="Ukraine">Ukraine</option>
-              <option value="United Arab Emirates">United Arab Emirates</option>
-              <option value="United Kingdom">United Kingdom</option>
-              <option value="United States">United States</option>
-              <option value="Uruguay">Uruguay</option>
-              <option value="Uzbekistan">Uzbekistan</option>
-              <option value="Vanuatu">Vanuatu</option>
-              <option value="Vatican City">Vatican City</option>
-              <option value="Venezuela">Venezuela</option>
-              <option value="Vietnam">Vietnam</option>
-              <option value="Yemen">Yemen</option>
-              <option value="Zambia">Zambia</option>
-              <option value="Zimbabwe">Zimbabwe</option>
-            </select>
-          </div>
-          <div class="col-md-8 mt-2">
-            <label for="validationCustom06">Choose a course:</label>
-            <select name="course" id="validationCustom06" class="course">
-              <option value="">--Select Your Course--</option>
-              <option value="AWS Certified Cloud Practitioner">AWS Certified Cloud Practitioner</option>
-              <option value="Fullstack Web Development">Fullstack Web Development</option>
-              <option value="AWS Solutions Architect">AWS Solutions Architect</option>
-              <option value="AWS Associate Developer">AWS Associate Developer</option>
-              <option value="AWS Associate SysOps Administrator">AWS Associate SysOps Administrator</option>
-              <option value="Microsoft Azure Fundamentals">Microsoft Azure Fundamentals</option>
-              <option value="Developing Solutions for Microsoft AzureCourse">Developing Solutions for Microsoft AzureCourse</option>
-              <option value="Microsoft Azure Administrator">Microsoft Azure Administrator</option>
-              <option value="Designing Microsoft Azure Infrastructure Solutions">Designing Microsoft Azure Infrastructure Solutions</option>
-              <option value="Salesforce ai associate">Salesforce ai associate</option>
-            </select>
-          </div>
-
-          <div class="p-3 " >
-            <h4>Choose your time preference</h4>
-            <div>
-              <h4>Weekday classes: Monday - Thursday</h4>
-              <h4><i>Weekend classes: Is personalized</i></h4>
-
-
-              <div class="col-md-8 mt-2">
-
-                <label for="validationCustom07">Nigeria Time Zone:</label>
-                <select name="nigeria_time" id="validationCustom07" class="nigeria_time">
-                  <option value="">--Select Your Time--</option>
-                  <option value="Morning: 9-12AM">Morning: 9-12AM</option>
-                  <option value="Afternoon: 2-5PM">Afternoon: 2-5PM</option>
-                  <option value="Evening: 7-9PM">Evening: 7-9PM</option>
-
-                </select>
-              </div>
-              <div class="col-md-8 mt-2">
-
-                <label for="validationCustom08">United Kingdom (UK) Time Zone:</label>
-                <select name="uk_time" id="validationCustom08" class="uk_time">
-                  <option value="">--Select Your Time--</option>
-                  <option value="Morning: 9-12AM">Morning: 9-12AM</option>
-                  <option value="Afternoon: 2-5PM">Afternoon: 2-5PM</option>
-                  <option value="Evening: 8–10pm">Evening: 8–10pm</option>
-
-                </select>
-              </div>
-              <div class="col-md-8 mt-2">
-
-                <label for="validationCustom09">South Africa Time Zone:</label>
-                <select name="south_africa_time" id="validationCustom09" class="sa_time">
-                  <option value="">--Select Your Time--</option>
-                  <option value="Morning: 8–1pm ">Morning: 8–1pm </option>
-                  <option value=" Afternoon: 3–6pm">Afternoon: 3–6pm </option>
-                  <option value="Evening: 8–10pm">Evening: 8–10pm</option>
-
-                </select>
-              </div>
-            </div>
-          </div>
-
-            <div class="col-12 mt-5">
-              <button class="btn btn-primary" id="btn-submit" type="submit">Submit form</button>
-            </div>
-          </form>
-        </div>
-      </div>
-      <div id="overlay"></div>
 
       <!-- Home -->
 
@@ -522,16 +187,13 @@
                 <h2>Choose your course</h2>
               </div>
               <div class="section_subtitle">
-                Suspendisse tincidunt magna eget massa hendrerit efficitur. Ut
-                euismod pellentesque imperdiet. Cras laoreet gravida lectus, at
-                viverra lorem venenatis in. Aenean id varius quam. Nullam
-                bibendum interdum dui, ac tempor lorem convallis ut
+                Whether you're just beginning or already a professional in IT, we're here to help transform your career. Our approach is tailored to guide every student towards success in today's global marketplace. With programs that help you level up, we provide the stepping stones to a thriving professional career,Delivered by AWS certified trainers with rich industry experience ensuring exposure to real-world use-cases.
               </div>
             </div>
           </div>
 
           <!-- Course Search -->
-          <div class="row">
+          <!-- <div class="row">
             <div class="col">
               <div class="course_search">
                 <form
@@ -563,7 +225,7 @@
                 </form>
               </div>
             </div>
-          </div>
+          </div> -->
 
           <!-- Featured Course -->
           <div class="row featured_row">
@@ -571,7 +233,7 @@
               <div class="featured_content">
                 <div class="featured_title">
                   <h3>
-                    <a href="courses.html">AWS Certified Cloud Practitioner</a>
+                    <a href="./courses/Cloud Practitioner.html">AWS Certified Cloud Practitioner</a>
                   </h3>
                 </div>
                 <div class="featured_text">
@@ -581,11 +243,11 @@
                 <div
                   class="course_footer d-flex flex-row align-items-center justify-content-start"
                 >
-                  <div data-modal-target="#modal1" class="course_tag">
-                    <a href="#">View Course Outline</a>
+                  <div class="course_tag">
+                    <a href="./courses/Cloud Practitioner.html">View Course Outline</a>
                   </div>
                   <div class="course_price ml-auto">
-                    Price: <span>$35</span>
+                    Price: <span>$300</span>
                   </div>
                 </div>
               </div>
@@ -597,140 +259,7 @@
                 style="background-image: url(images/course_1.jpg)"
               ></div>
             </div>
-            <div class="modal1" id="modal1">
-              <div class="modal__wrapper">
-                <button data-close-button class="close-btn">X</button>
-                <div class="modal-pic">
-                  <img src="images/course_1.jpg" alt="" width="250px" />
-                </div>
-                <div class="modal-info">
-                  <div class="course_body">
-                    <div
-                      class="course_header d-flex flex-row align-items-center justify-content-start"
-                    ></div>
-                    <div class="course_title">
-                      <h3>
-                        <a href="courses.html"
-                          >AWS Certified Cloud Practitioner</a
-                        >
-                      </h3>
-                    </div>
-                    <div class="course_text">
-                      Earners of this certification have a fundamental
-                      understanding of IT services and their uses in the AWS
-                      Cloud
-                    </div>
-                    <div
-                      class="dp d-flex flex-row align-items-center justify-content-start"
-                    >
-                      <div class="featured_tag"><a href="#">2 Weeks</a></div>
-                      <div class="featured_price ml-auto">
-                        Price: <span>$35</span>
-                      </div>
-                    </div>
 
-                    <div class="module__container">
-                      <h3>AWS Cloud Practitioner Training Course Overview</h3>
-                      <ul>
-                        <h4>Module 1: Introduction to Amazon Web Services</h4>
-                        <li>Introduction</li>
-                        <li>Cloud Computing</li>
-                      </ul>
-                      <ul>
-                        <h4>Module 2: Compute in the Cloud</h4>
-                        <li>Introduction</li>
-                        <li>Amazon EC2 Instance Types</li>
-                        <li>Amazon EC2 Pricing</li>
-                        <li>Scaling Amazon EC2</li>
-                        <li>Directing Traffic with Elastic Load Balancing</li>
-                        <li>Messaging and Queuing</li>
-                        <li>Additional Compute Services</li>
-                      </ul>
-                      <ul>
-                        <h4>Module 3: Global Infrastructure and Reliability</h4>
-                        <li>Introduction</li>
-                        <li>AWS Global Infrastructure</li>
-                        <li>Edge Locations</li>
-                        <li>How to Provision AWS Resources</li>
-                      </ul>
-                      <ul>
-                        <h4>Module 4: Networking</h4>
-                        <li>Introduction</li>
-                        <li>Connectivity to AWS</li>
-                        <li>Subnets and Network Access Control Lists</li>
-                        <li>Global Networking</li>
-                      </ul>
-                      <ul>
-                        <h4>Module 5: Storage and Databases</h4>
-                        <li>Introduction</li>
-                        <li>
-                          Instance Stores and Amazon Elastic Block Store (Amazon
-                          EBS)
-                        </li>
-                        <li>Amazon Simple Storage Service (Amazon S3)</li>
-                        <li>Amazon Elastic File System (Amazon EFS)</li>
-                        <li>Amazon Relational Database Service (Amazon RDS)</li>
-                        <li>Amazon DynamoDB</li>
-                        <li>Amazon Redshift</li>
-                        <li>AWS Database Migration Service</li>
-                        <li>Additional Database Services</li>
-                      </ul>
-                      <ul>
-                        <h4>Module 6: Security</h4>
-                        <li>Introduction</li>
-                        <li>AWS Shared Responsibility Model</li>
-                        <li>User Permissions and Access</li>
-                        <li>AWS Organizations</li>
-                        <li>Compliance</li>
-                        <li>Denial-of-Service Attacks</li>
-                        <li>Additional Security Services</li>
-                      </ul>
-                      <ul>
-                        <h4>Module 7: Monitoring and Analytics</h4>
-                        <li>Introduction</li>
-                        <li>Amazon CloudWatch</li>
-                        <li>AWS CloudTrail</li>
-                        <li>AWS Trusted Advisor</li>
-                      </ul>
-                      <ul>
-                        <h4>Module 8: Pricing and Support</h4>
-                        <li>Introduction</li>
-                        <li>AWS Free Tier</li>
-                        <li>AWS Pricing Concepts</li>
-                        <li>Billing Dashboard</li>
-                        <li>Consolidated Billing</li>
-                        <li>AWS Budgets</li>
-                        <li>AWS Cost Explorer</li>
-                        <li>AWS Support Plans</li>
-                        <li>AWS Marketplace</li>
-                      </ul>
-                      <ul>
-                        <h4>Module 9: Migration and Innovation</h4>
-                        <li>Introduction</li>
-                        <li>AWS Cloud Adoption Framework (AWS CAF)</li>
-                        <li>Migration Strategies</li>
-                        <li>AWS Snow Family</li>
-                        <li>Innovation with AWS</li>
-                      </ul>
-                      <ul>
-                        <h4>Module 10: The Cloud Journey</h4>
-                        <li>Introduction</li>
-                        <li>The AWS Well-Architected Framework</li>
-                        <li>Benefits of the AWS Cloud</li>
-                      </ul>
-                    </div>
-
-                    <div
-                      class="course_footer d-flex align-items-center justify-content-start"
-                    >
-                      <div class="course_author_name">
-                        <a href="#">Read More....</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
           <div class="row courses_row">
             <!-- Course -->
@@ -742,7 +271,7 @@
                 <div class="course_body">
                   <div class="course_title">
                     <h3>
-                      <a href="courses.html">Fullstack Web Development</a>
+                      <a href="./courses/Fullstack Web Development.html">Fullstack Web Development</a>
                     </h3>
                   </div>
                   <div class="course_text">
@@ -754,103 +283,18 @@
                   <div
                     class="course_footer d-flex flex-row align-items-center justify-content-start"
                   >
-                    <div data-modal-target="#modal10" class="course_tag">
-                      <a href="#">View Course Outline</a>
+                    <div class="course_tag">
+                      <a href="./courses/Fullstack Web Development.html">View Course Outline</a>
                     </div>
                     <div class="course_price ml-auto">
-                      Price: <span>$250</span>
+                      Price: <span>$500</span>
                     </div>
                   </div>
                 </div>
               </div>
 
               <!-- modal -->
-              <div class="modal1" id="modal10">
-                <div class="modal__wrapper">
-                  <button data-close-button class="close-btn">X</button>
-                  <div class="modal-pic">
-                    <img src="images/mernstack.png" alt="" width="250px" />
-                  </div>
-                  <div class="modal-info">
-                    <div class="course_body">
-                      <div
-                        class="course_header d-flex flex-row align-items-center justify-content-start"
-                      ></div>
-                      <div class="course_title">
-                        <h3>
-                          <a href="courses.html">Fullstack Web Development</a>
-                        </h3>
-                      </div>
-                      <div class="course_text">
-                        We teach front end and Back end which include Html5,
-                        Css3, JavaScript, ReactJs, Expressjs, NodeJs, MongoDb
-                        all these makes anyone a good full MERN Developer.
-                      </div>
-                      <div
-                        class="dp d-flex flex-row align-items-center justify-content-start"
-                      >
-                        <div class="featured_tag"><a href="#">2 Months</a></div>
-                        <div class="featured_price ml-auto">
-                          Price: <span>$250</span>
-                        </div>
-                      </div>
 
-                      <div class="module__container">
-                        <h3>
-                          Fullstack Web Development Training Course Overview
-                        </h3>
-                        <ul>
-                          <li>Introduction to Web Development (HTML Basics)</li>
-                          <li>
-                            Styling Websites with CSS (Layouts, Flexbox, Grid)
-                          </li>
-                          <li>JavaScript Basics (DOM Manipulation, Events)</li>
-                          <li>Advanced JavaScript (ES6+, APIs, Fetch)</li>
-                          <li>
-                            Introduction to Front-End Frameworks (React Basics)
-                          </li>
-                          <li>
-                            Building a React Project (Components, State
-                            Management)
-                          </li>
-                          <li>
-                            Version Control with Git and GitHub Deploying
-                            Websites (Netlify, GitHub Pages)
-                          </li>
-                          <li>
-                            Project: Build a responsive portfolio website using
-                            React and host it online.
-                          </li>
-                          <li>Introduction to Nodejs</li>
-                          <li>Learn express</li>
-                          <li>Body parser, middleware</li>
-                          <li>Moving to big stack project</li>
-                          <li>move to Mongodb</li>
-                          <li>
-                            Bigstack Major Project - login routes and tokens
-                          </li>
-                          <li>
-                            Bigstack Major Project working on user profile
-                          </li>
-                          <li>
-                            Building a Server: Build a server with the Express
-                            framework
-                          </li>
-                        </ul>
-                      </div>
-
-                      <div
-                        class="course_footer d-flex align-items-center justify-content-start"
-                      >
-                        <div class="course_author_name">
-                          <a href="#">Read More....</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div id="overlay"></div>
             </div>
 
             <!-- Course -->
@@ -861,144 +305,24 @@
                 </div>
                 <div class="course_body">
                   <div class="course_title">
-                    <h3><a href="courses.html">AWS Solutions Architect </a></h3>
+                    <h3><a href="./courses/AWS Solutions Architect.html">AWS Certified Solutions Architect – Associate </a></h3>
                   </div>
                   <div class="course_text">
-                    Earners of this certification have a fundamental
-                    understanding of IT services and their uses in the AWS Cloud
+                    Earners of this certificate are able to strategically design well-architected distributed systems that are scalable, resilient, efficient, and fault-tolerant.
                   </div>
                   <div
                     class="course_footer d-flex flex-row align-items-center justify-content-start"
                   >
-                    <div data-modal-target="#modal2" class="course_tag">
-                      <a href="#">View Course Outline</a>
+                    <div  class="course_tag">
+                      <a href="./courses/AWS Solutions Architect.html">View Course Outline</a>
                     </div>
                     <div class="course_price ml-auto">
-                      Price: <span>$35</span>
+                      Price: <span>$500</span>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="modal1" id="modal2">
-                <div class="modal__wrapper">
-                  <button data-close-button class="close-btn">X</button>
-                  <div class="modal-pic">
-                    <img src="images/course_2.jpg" alt="" width="250px" />
-                  </div>
-                  <div class="modal-info">
-                    <div class="course_body">
-                      <div
-                        class="course_header d-flex flex-row align-items-center justify-content-start"
-                      ></div>
-                      <div class="course_title">
-                        <h3>
-                          <a href="courses.html">AWS Solutions Architect</a>
-                        </h3>
-                      </div>
-                      <div class="course_text">
-                        Earners of this certification have a fundamental
-                        understanding of IT services and their uses in the AWS
-                        Cloud
-                      </div>
-                      <div
-                        class="dp d-flex flex-row align-items-center justify-content-start"
-                      >
-                        <div class="featured_tag"><a href="#">2 Weeks</a></div>
-                        <div class="featured_price ml-auto">
-                          Price: <span>$35</span>
-                        </div>
-                      </div>
 
-                      <div class="module__container">
-                        <h3>
-                          AWS Solutions Architect Training​ Course Outline
-                        </h3>
-                        <ul>
-                          <h4>
-                            Module 1: Introduction to AWS and Cloud Computing
-                          </h4>
-                          <li>Introduction</li>
-                          <li>Cloud Computing</li>
-                          <li>Virtualisation</li>
-                          <li>Characteristics of Virtualisation</li>
-                          <li>AWS Cloud</li>
-                          <li>AWS Platform Architecture</li>
-                        </ul>
-                        <ul>
-                          <h4>Module 2: Amazon EC2 and Elastic Block Store</h4>
-                          <li>Introduction</li>
-                          <li>EC2</li>
-                          <li>EC2 Instance</li>
-                        </ul>
-                        <ul>
-                          <h4>
-                            Module 3: Amazon S3 and Amazon Glacier Storage
-                          </h4>
-                          <li>Introduction</li>
-                          <li>S3</li>
-                          <li>Amazon Glacier</li>
-                          <li>Other Storage Services</li>
-                        </ul>
-                        <ul>
-                          <h4>Module 4: Amazon Virtual Private Cloud</h4>
-                          <li>Introduction</li>
-                          <li>Subnets</li>
-                          <li>VPC CIDR Blocks</li>
-                          <li>Internet Gateways and Route Tables</li>
-                          <li>
-                            Security Groups and Network Access Control Lists
-                          </li>
-                        </ul>
-                        <ul>
-                          <h4>Module 5: Database</h4>
-                          <li>Introduction</li>
-                          <li>Relational Database</li>
-                          <li>Amazon Relational Database Service</li>
-                          <li>Nonrelational (NoSQL) Databases</li>
-                          <li>DynamolDB</li>
-                        </ul>
-                        <ul>
-                          <h4>Module 6: Identify Access Management</h4>
-                          <li>Introduction</li>
-                          <li>Introduction to IAM</li>
-                          <li>IAM Features</li>
-                          <li>Identities</li>
-                        </ul>
-                        <ul>
-                          <h4>Module 7: CloudTrail and CloudWatch</h4>
-                          <li>Introduction</li>
-                          <li>CloudTrail</li>
-                          <li>CloudWatch</li>
-                        </ul>
-                        <ul>
-                          <h4>
-                            Module 8: Domain Name System and Cloud Formation
-                          </h4>
-                          <li>Introduction</li>
-                          <li>Domain Name System</li>
-                          <li>Cloud Formation</li>
-                        </ul>
-                        <ul>
-                          <h4>Module 9: Reliability Pillar</h4>
-                          <li>Introduction</li>
-                          <li>Calculating Availability</li>
-                          <li>EC2 Auto Scaling</li>
-                          <li>Components of Reliability</li>
-                          <li>Designing for Availability</li>
-                        </ul>
-                      </div>
-
-                      <div
-                        class="course_footer d-flex align-items-center justify-content-start"
-                      >
-                        <div class="course_author_name">
-                          <a href="#">Read More....</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
 
             <!-- Course -->
@@ -1009,129 +333,19 @@
                 </div>
                 <div class="course_body">
                   <div class="course_title">
-                    <h3><a href="courses.html">AWS Associate Developer</a></h3>
+                    <h3><a href="courses.html./courses/AWS Associate Developer.html">AWS Certified Developer – Associate</a></h3>
                   </div>
                   <div class="course_text">
-                    Earners of this certification have a fundamental
-                    understanding of IT services and their uses in the AWS Cloud
+                    Earning this certificate would enable you demonstrate proficiency in writing applications with AWS service APIs, AWS CLI, and SDKs; using containers; and deploying with a CI/CD pipeline.
                   </div>
                   <div
                     class="course_footer d-flex flex-row align-items-center justify-content-start"
                   >
-                    <div data-modal-target="#modal3" class="course_tag">
-                      <a href="#">View Course Outline</a>
+                    <div class="course_tag">
+                      <a href="./courses/AWS Associate Developer.html">View Course Outline</a>
                     </div>
                     <div class="course_price ml-auto">
-                      Price: <span>$35</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="modal1" id="modal3">
-                <div class="modal__wrapper">
-                  <button data-close-button class="close-btn">X</button>
-                  <div class="modal-pic">
-                    <img src="images/course_3.jpg" alt="" width="250px" />
-                  </div>
-                  <div class="modal-info">
-                    <div class="course_body">
-                      <div
-                        class="course_header d-flex flex-row align-items-center justify-content-start"
-                      ></div>
-                      <div class="course_title">
-                        <h3>
-                          <a href="courses.html">AWS Associate Developer</a>
-                        </h3>
-                      </div>
-                      <div class="course_text">
-                        Earners of this certification have a fundamental
-                        understanding of IT services and their uses in the AWS
-                        Cloud
-                      </div>
-                      <div
-                        class="dp d-flex flex-row align-items-center justify-content-start"
-                      >
-                        <div class="featured_tag"><a href="#">2 Weeks</a></div>
-                        <div class="featured_price ml-auto">
-                          Price: <span>$35</span>
-                        </div>
-                      </div>
-
-                      <div class="module__container">
-                        <h3>AWS Developer Training​ Course Outline</h3>
-                        <ul>
-                          <h4>
-                            Module 1: Introduction to AWS and the Developer
-                            Associate Certification
-                          </h4>
-                          <li>Understanding AWS Cloud and its benefits</li>
-                          <li>Shared Responsibility Model in AWS</li>
-                          <li>
-                            Overview of the AWS Certified Developer – Associate
-                            exam
-                          </li>
-                          <li>
-                            Exam objectives, question types, and passing
-                            criteria
-                          </li>
-                          <li>Handson: Setting up an AWS Free Tier account</li>
-                        </ul>
-                        <ul>
-                          <h4>Module 2: Development with AWS Services</h4>
-                          <li>
-                            Developing Code for Applications Hosted on AWS
-                          </li>
-                          <li>Developing Code for AWS Lambda</li>
-                          <li>Using Data Stores in Application Development</li>
-                        </ul>
-                        <ul>
-                          <h4>Module 3: Security</h4>
-                          <li>Implementing Authentication and Authorization</li>
-                          <li>Implementing Encryption in AWS</li>
-                          <li>Managing Sensitive Data in Application Code</li>
-                        </ul>
-                        <ul>
-                          <h4>Module 4: Deployment</h4>
-                          <li>
-                            Section 1: Preparing Application Artifacts for
-                            Deployment
-                          </li>
-                          <li>
-                            Section 2: Testing Applications in Development
-                            Environments
-                          </li>
-                          <li>Section 3: Automating Deployment Testing</li>
-                          <li>
-                            Section 4: Deploying Code Using AWS CI/CD Services
-                          </li>
-                        </ul>
-
-                        <ul>
-                          <h4>Module 5: Troubleshooting and Optimization</h4>
-                          <li>Section 1: Performing Root Cause Analysis</li>
-                          <li>
-                            Section 2: Instrumenting Code for Observability
-                          </li>
-                          <li>
-                            Section 3: Optimizing Applications Using AWS
-                            Services
-                          </li>
-                        </ul>
-                        <ul>
-                          <h4>Module 6: Exam Preparation and Practice</h4>
-                          <li>Section 1: Review of Key Concepts</li>
-                          <li>Section 2: Practice Exams and Quizzes</li>
-                          <li>Section 3: Study Tips and Exam Strategies</li>
-                        </ul>
-                      </div>
-
-                      <div
-                        class="course_footer d-flex align-items-center justify-content-start"
-                      >
-                        <div class="course_author_name">
-                          <a href="#">Read More....</a>
-                        </div>
-                      </div>
+                      Price: <span>$500</span>
                     </div>
                   </div>
                 </div>
@@ -1147,258 +361,27 @@
                 <div class="course_body">
                   <div class="course_title">
                     <h3>
-                      <a href="courses.html"
-                        >AWS Associate SysOps Administrator
+                      <a href="./courses/AWS Associate SysOps Administrator.html"
+                        >AWS Certified SysOps Administrator – Associate
                       </a>
                     </h3>
                   </div>
                   <div class="course_text">
-                    Earners of this certification have a fundamental
-                    understanding of IT services and their uses in the AWS Cloud
+                    Students that earns this certification have a comprehensive understanding on how to deploy, manage, and operate IT systems on the AWS Cloud.
                   </div>
                   <div
                     class="course_footer d-flex flex-row align-items-center justify-content-start"
                   >
                     <div data-modal-target="#modal4" class="course_tag">
-                      <a href="#">View Course Outline</a>
+                      <a href="./courses/AWS Associate SysOps Administrator.html">View Course Outline</a>
                     </div>
                     <div class="course_price ml-auto">
-                      Price: <span>$35</span>
+                      Price: <span>$500</span>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="modal1" id="modal4">
-                <div class="modal__wrapper">
-                  <button data-close-button class="close-btn">X</button>
-                  <div class="modal-pic">
-                    <img src="images/course_4.jpg" alt="" width="250px" />
-                  </div>
-                  <div class="modal-info">
-                    <div class="course_body">
-                      <div
-                        class="course_header d-flex flex-row align-items-center justify-content-start"
-                      ></div>
-                      <div class="course_title">
-                        <h3>
-                          <a href="courses.html"
-                            >AWS Associate SysOps Administrator
-                          </a>
-                        </h3>
-                      </div>
-                      <div class="course_text">
-                        Earners of this certification have a fundamental
-                        understanding of IT services and their uses in the AWS
-                        Cloud
-                      </div>
-                      <div
-                        class="dp d-flex flex-row align-items-center justify-content-start"
-                      >
-                        <div class="featured_tag"><a href="#">2 Weeks</a></div>
-                        <div class="featured_price ml-auto">
-                          Price: <span>$35</span>
-                        </div>
-                      </div>
 
-                      <div class="module__container">
-                        <h3>
-                          AWS Associate SysOps Administrator Training​ Outline
-                        </h3>
-                        <ul>
-                          <h4>
-                            Domain 1: Monitoring, Logging, and Remediation
-                          </h4>
-                          <li>
-                            IImplement Metrics, Alarms, and Filters by Using AWS
-                            Monitoring and
-                          </li>
-                          <li>Logging Services</li>
-                          <li>Identify, Collect, Analyse, and Export Logs</li>
-                          <li>
-                            Collect Metrics and Logs Using the CloudWatch Agent
-                          </li>
-                          <li>Create CloudWatch Alarms</li>
-                          <li>Create Metric Filters</li>
-                          <li>Create CloudWatch Dashboards</li>
-                          <li>Configure Notifications</li>
-                          <li>
-                            Remediate Issues Based on Monitoring and
-                            Availability Metrics
-                          </li>
-                          <li>
-                            Troubleshoot or Take Corrective Actions Based on
-                            Notifications and Alarms
-                          </li>
-                          <li>
-                            Configure Amazon Event Bridge Rules to Trigger
-                            Actions
-                          </li>
-                          <li>Use AWS Systems Manager Automation Documents</li>
-                        </ul>
-                        <ul>
-                          <h4>Domain 2: Reliability and Business Continuity</h4>
-                          <li>Implement Scalability and Elasticity</li>
-                          <li>Create and Maintain AWS Auto Scaling Plans</li>
-                          <li>Implement Caching</li>
-                          <li>
-                            Implement Amazon RDS Replicas and Amazon Aurora
-                            Replicas
-                          </li>
-                          <li>Implement Loosely Coupled Architectures</li>
-                          <li>
-                            Differentiate Between Horizontal Scaling and
-                            Vertical Scaling
-                          </li>
-                          <li>
-                            Implement High Availability and Resilient
-                            Environments
-                          </li>
-                          <li>
-                            Configure Elastic Load Balancer and Amazon Route 53
-                            Health Checks
-                          </li>
-                          <li>
-                            Differentiate Between the Use of a Single
-                            Availability Zone and Multi-AZ Deployments
-                          </li>
-                          <li>Implement Fault-Tolerant Workloads</li>
-                          <li>Implement Route 53 Routing Policies</li>
-                          <li>Implement Backup and Restore Strategies</li>
-                          <li>
-                            Automate Snapshots and Backups Based on Use Cases
-                          </li>
-                          <li>Restore Databases</li>
-                          <li>Implement Versioning and Lifecycle Rules</li>
-                          <li>Configure Amazon S3 Cross-Region Replication</li>
-                          <li>Execute Disaster Recovery Procedures</li>
-                        </ul>
-                        <ul>
-                          <h4>
-                            Domain 3: Deployment, Provisioning, and Automation
-                          </h4>
-                          <li>Provision and Maintain Cloud Resources</li>
-                          <li>Create and Manage AMIs</li>
-                          <li>
-                            Create, Manage, and Troubleshoot AWS CloudFormation
-                          </li>
-                          <li>
-                            Provision Resources Across Multiple AWS Regions and
-                            Accounts
-                          </li>
-                          <li>Select Deployment Scenarios and Services</li>
-                          <li>Identify and Remediate Deployment Issues</li>
-                          <li>Automate Manual or Repeatable Processes</li>
-                          <li>Use AWS Services</li>
-                          <li>Implement Automated Patch Management</li>
-                          <li>
-                            Schedule Automated Tasks by Using AWS Services
-                          </li>
-                        </ul>
-                        <ul>
-                          <h4>Domain 4: Security and Compliance</h4>
-                          <li>
-                            Implement and Manage Security and Compliance
-                            Policies
-                          </li>
-                          <li>Implement IAM Features</li>
-                          <li>
-                            Troubleshoot and Audit Access Issues by Using AWS
-                            Services
-                          </li>
-                          <li>
-                            Validate Service Control Policies and Permissions
-                            Boundaries
-                          </li>
-                          <li>Review AWS Trusted Advisor Security Checks</li>
-                          <li>
-                            Validate AWS Region and Service Selections Based on
-                            Compliance Requirements
-                          </li>
-                          <li>
-                            Implement Data and Infrastructure Protection
-                            Strategies
-                          </li>
-                          <li>Enforce a Data Classification Scheme</li>
-                          <li>Create, Manage, and Protect Encryption Keys</li>
-                          <li>Implement Encryption at Rest and in Transit</li>
-                          <li>Securely Store Secrets by Using AWS Services</li>
-                          <li>Review Reports or Findings</li>
-                        </ul>
-                        <ul>
-                          <h4>Domain 5: Networking and Content Delivery</h4>
-                          <li>
-                            Implement Networking Features and Connectivity
-                          </li>
-                          <li>Configure a VPC</li>
-                          <li>VPC CIDR Block</li>
-                          <li>Subnets</li>
-                          <li>Elastic Network Interfaces</li>
-                          <li>Features of Elastic Network Interfaces</li>
-                          <li>Internet Gateway</li>
-                          <li>Route Tables</li>
-                          <li>VPC Security Groups</li>
-                          <li>Network Access Control Lists (NACLs)</li>
-                          <li>Difference Between SG and NACL</li>
-                          <li>Network Address Translation</li>
-                          <li>VPC Hands-On</li>
-                          <li>Configure AWS Network Protection Services</li>
-                          <li>
-                            Configure Domains, DNS Services, and Content
-                            Delivery
-                          </li>
-                          <li>Configure Route 53 Hosted Zones and Records</li>
-                          <li>Implement Route 53 Routing Policies</li>
-                          <li>Configure DNS</li>
-                          <li>
-                            Configure Amazon CloudFront and S3 Origin Access
-                            Identity (OAI)
-                          </li>
-                          <li>Configure S3 Static Website Hosting</li>
-                          <li>Troubleshoot Network Connectivity Issues</li>
-                          <li>Interpret VPC Configurations</li>
-                          <li>Collect and Interpret Logs</li>
-                        </ul>
-                        <ul>
-                          <h4>Domain 6: Cost and Performance Optimization</h4>
-                          <li>Implement Cost Optimisation Strategies</li>
-                          <li>Implement Cost Allocation Tags</li>
-                          <li>
-                            Identify and Remediate Underutilised or Unused
-                            Resources by Using AWS Services and Tools
-                          </li>
-                          <li>Configure AWS Budgets and Billing Alarms</li>
-                          <li>
-                            Identify Opportunities to Use Managed Services
-                          </li>
-                          <li>Implement Performance Optimisation Strategies</li>
-                          <li>
-                            Recommend Compute Resources Based on Performance
-                            Metrics
-                          </li>
-                          <li>
-                            Monitor Amazon EBS Metrics and Modify Configuration
-                            to Increase Performance Efficiency
-                          </li>
-                          <li>Implement S3 Performance Features</li>
-                          <li>
-                            Monitor RDS Metrics and Modify the Configuration to
-                            Increase Performance Efficiency
-                          </li>
-                          <li>Enable Enhanced EC2 Capabilities</li>
-                        </ul>
-                      </div>
-
-                      <div
-                        class="course_footer d-flex align-items-center justify-content-start"
-                      >
-                        <div class="course_author_name">
-                          <a href="#">Read More....</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
 
             <!-- Course -->
@@ -1410,77 +393,25 @@
                 <div class="course_body">
                   <div class="course_title">
                     <h3>
-                      <a href="courses.html">Microsoft Azure Fundamentals</a>
+                      <a href="./courses/Microsoft Azure Fundamentals.html">Microsoft Certified: Azure Fundamentals</a>
                     </h3>
                   </div>
                   <div class="course_text">
-                    Earners of this certification have a fundamental
-                    understanding of IT services and their uses in the AWS Cloud
+                    Earning the Azure Fundamentals certification ,you have demonstrated foundational level knowledge of cloud services and how those services are provided with Microsoft Azure.
                   </div>
                   <div
                     class="course_footer d-flex flex-row align-items-center justify-content-start"
                   >
-                    <div data-modal-target="#modal5" class="course_tag">
-                      <a href="#">View Course Outline</a>
+                    <div class="course_tag">
+                      <a href="./courses/Microsoft Azure Fundamentals.html">View Course Outline</a>
                     </div>
                     <div class="course_price ml-auto">
-                      Price: <span>$35</span>
+                      Price: <span>$500</span>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="modal1" id="modal5">
-                <div class="modal__wrapper">
-                  <button data-close-button class="close-btn">X</button>
-                  <div class="modal-pic">
-                    <img src="images/course_11.jpg" alt="" width="250px" />
-                  </div>
-                  <div class="modal-info">
-                    <div class="course_body">
-                      <div
-                        class="course_header d-flex flex-row align-items-center justify-content-start"
-                      ></div>
-                      <div class="course_title">
-                        <h3>
-                          <a href="courses.html"
-                            >Microsoft Azure Fundamentals
-                          </a>
-                        </h3>
-                      </div>
-                      <div class="course_text">
-                        Earners of this certification have a fundamental
-                        understanding of IT services and their uses in the AWS
-                        Cloud
-                      </div>
-                      <div
-                        class="dp d-flex flex-row align-items-center justify-content-start"
-                      >
-                        <div class="featured_tag"><a href="#">2 Weeks</a></div>
-                        <div class="featured_price ml-auto">
-                          Price: <span>$35</span>
-                        </div>
-                      </div>
 
-                      <div class="module__container">
-                        <h3>Microsoft Azure Fundamentals Training​ Outline</h3>
-                        <ul>
-                          <li>Module 1: Cloud concepts</li>
-                          <li>Module 2: Azure architecture and services</li>
-                          <li>Module 3: Azure management and governance</li>
-                        </ul>
-                      </div>
-
-                      <div
-                        class="course_footer d-flex align-items-center justify-content-start"
-                      >
-                        <div class="course_author_name">
-                          <a href="#">Read More....</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
 
             <!-- Course -->
@@ -1492,194 +423,27 @@
                 <div class="course_body">
                   <div class="course_title">
                     <h3>
-                      <a href="courses.html"
-                        >Developing Solutions for Microsoft AzureCourse</a
+                      <a href="./courses/Developing Solutions for Microsoft AzureCourse.html"
+                        >Microsoft Certified: Azure Developer Associate</a
                       >
                     </h3>
                   </div>
                   <div class="course_text">
-                    Earners of this certification have a fundamental
-                    understanding of IT services and their uses in the AWS Cloud
+                    Candidates participate in all phases of cloud development from requirements definition and design, to development, deployment, and maintenance.
                   </div>
                   <div
                     class="course_footer d-flex flex-row align-items-center justify-content-start"
                   >
-                    <div data-modal-target="#modal6" class="course_tag">
-                      <a href="#">View Course Outline</a>
+                    <div class="course_tag">
+                      <a href="./courses/Developing Solutions for Microsoft AzureCourse.html">View Course Outline</a>
                     </div>
                     <div class="course_price ml-auto">
-                      Price: <span>$35</span>
+                      Price: <span>$500</span>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="modal1" id="modal6">
-                <div class="modal__wrapper">
-                  <button data-close-button class="close-btn">X</button>
-                  <div class="modal-pic">
-                    <img src="images/course_11.jpg" alt="" width="250px" />
-                  </div>
-                  <div class="modal-info">
-                    <div class="course_body">
-                      <div
-                        class="course_header d-flex flex-row align-items-center justify-content-start"
-                      ></div>
-                      <div class="course_title">
-                        <h3>
-                          <a href="courses.html"
-                            >Developing Solutions for Microsoft AzureCourse
-                          </a>
-                        </h3>
-                      </div>
-                      <div class="course_text">
-                        Earners of this certification have a fundamental
-                        understanding of IT services and their uses in the AWS
-                        Cloud
-                      </div>
-                      <div
-                        class="dp d-flex flex-row align-items-center justify-content-start"
-                      >
-                        <div class="featured_tag"><a href="#">2 Weeks</a></div>
-                        <div class="featured_price ml-auto">
-                          Price: <span>$35</span>
-                        </div>
-                      </div>
 
-                      <div class="module__container">
-                        <h3>
-                          Developing Solutions for Microsoft AzureCourse
-                          Training​ Outline
-                        </h3>
-                        <ul>
-                          <li>Module 1: Create Azure App Service Web Apps</li>
-                          <li>Module 2: Implement Azure functions</li>
-                          <li>
-                            Module 3: Develop solutions that use blob storage
-                          </li>
-                          <li>
-                            Module 4: Develop solutions that use Azure Cosmos DB
-                          </li>
-                          <li>Module 5: Implement IaaS solutions</li>
-                          <li>
-                            Module 6: Implement user authentication and
-                            authorization
-                          </li>
-                          <li>Module 7: Implement secure cloud solutions</li>
-                          <li>Module 8: Implement API Management</li>
-                          <li>Module 9: Develop event-based solutions</li>
-                          <li>Module 10: Develop message-based solutions</li>
-                          <li>
-                            Module 11: Instrument solutions to support
-                            monitoring and logging
-                          </li>
-                          <li>
-                            Module 12: Integrate caching and content delivery
-                            within solutions
-                          </li>
-                        </ul>
-                      </div>
-
-                      <div
-                        class="course_footer d-flex align-items-center justify-content-start"
-                      >
-                        <div class="course_author_name">
-                          <a href="#">Read More....</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Course -->
-            <div class="col-lg-4 col-md-6">
-              <div class="course">
-                <div class="course_image">
-                  <img src="images/course_12.jpg" alt="" width="250px" />
-                </div>
-                <div class="course_body">
-                  <div class="course_title">
-                    <h3>
-                      <a href="courses.html">Microsoft Azure Administrator</a>
-                    </h3>
-                  </div>
-                  <div class="course_text">
-                    Earners of this certification have a fundamental
-                    understanding of IT services and their uses in the AWS Cloud
-                  </div>
-                  <div
-                    class="course_footer d-flex flex-row align-items-center justify-content-start"
-                  >
-                    <div data-modal-target="#modal7" class="course_tag">
-                      <a href="#">View Course Outline</a>
-                    </div>
-                    <div class="course_price ml-auto">
-                      Price: <span>$35</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="modal1" id="modal7">
-                <div class="modal__wrapper">
-                  <button data-close-button class="close-btn">X</button>
-                  <div class="modal-pic">
-                    <img src="images/course_11.jpg" alt="" width="250px" />
-                  </div>
-                  <div class="modal-info">
-                    <div class="course_body">
-                      <div
-                        class="course_header d-flex flex-row align-items-center justify-content-start"
-                      ></div>
-                      <div class="course_title">
-                        <h3>
-                          <a href="courses.html"
-                            >Microsoft Azure Administrator
-                          </a>
-                        </h3>
-                      </div>
-                      <div class="course_text">
-                        Earners of this certification have a fundamental
-                        understanding of IT services and their uses in the AWS
-                        Cloud
-                      </div>
-                      <div
-                        class="dp d-flex flex-row align-items-center justify-content-start"
-                      >
-                        <div class="featured_tag"><a href="#">2 Weeks</a></div>
-                        <div class="featured_price ml-auto">
-                          Price: <span>$35</span>
-                        </div>
-                      </div>
-
-                      <div class="module__container">
-                        <h3>Microsoft Azure Administrator Training​ Outline</h3>
-                        <ul>
-                          <li>Module 1: Identity</li>
-                          <li>Module 2: Governance and Compliance</li>
-                          <li>Module 3: Azure Administration</li>
-                          <li>Module 4: Virtual Networking</li>
-                          <li>Module 5: Intersite Connectivity</li>
-                          <li>Module 6: Network Traffic Management</li>
-                          <li>Module 7: Azure Storage</li>
-                          <li>Module 8: Azure Virtual Machines</li>
-                          <li>Module 9: PaaS Compute Options</li>
-                          <li>Module 10: Data Protection</li>
-                          <li>Module 11: Monitoring</li>
-                        </ul>
-                      </div>
-
-                      <div
-                        class="course_footer d-flex align-items-center justify-content-start"
-                      >
-                        <div class="course_author_name">
-                          <a href="#">Read More....</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
 
             <!-- Course -->
@@ -1691,9 +455,7 @@
                 <div class="course_body">
                   <div class="course_title">
                     <h3>
-                      <a href="courses.html"
-                        >Designing Microsoft Azure Infrastructure Solutions</a
-                      >
+                      <a href="./courses/Microsoft Azure Administrator.html">Microsoft Azure Administrator</a>
                     </h3>
                   </div>
                   <div class="course_text">
@@ -1703,166 +465,81 @@
                   <div
                     class="course_footer d-flex flex-row align-items-center justify-content-start"
                   >
-                    <div data-modal-target="#modal8" class="course_tag">
-                      <a href="#">View Course Outline</a>
+                    <div class="course_tag">
+                      <a href="./courses/Microsoft Azure Administrator.html">View Course Outline</a>
                     </div>
                     <div class="course_price ml-auto">
-                      Price: <span>$35</span>
+                      Price: <span>$500</span>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="modal1" id="modal8">
-                <div class="modal__wrapper">
-                  <button data-close-button class="close-btn">X</button>
-                  <div class="modal-pic">
-                    <img src="images/course_11.jpg" alt="" width="250px" />
-                  </div>
-                  <div class="modal-info">
-                    <div class="course_body">
-                      <div
-                        class="course_header d-flex flex-row align-items-center justify-content-start"
-                      ></div>
-                      <div class="course_title">
-                        <h3>
-                          <a href="courses.html"
-                            >Designing Microsoft Azure Infrastructure Solutions
-                          </a>
-                        </h3>
-                      </div>
-                      <div class="course_text">
-                        Earners of this certification have a fundamental
-                        understanding of IT services and their uses in the AWS
-                        Cloud
-                      </div>
-                      <div
-                        class="dp d-flex flex-row align-items-center justify-content-start"
-                      >
-                        <div class="featured_tag"><a href="#">2 Weeks</a></div>
-                        <div class="featured_price ml-auto">
-                          Price: <span>$35</span>
-                        </div>
-                      </div>
 
-                      <div class="module__container">
-                        <h3>
-                          Designing Microsoft Azure Infrastructure Solutions
-                          Training​ Outline
-                        </h3>
-                        <ul>
-                          <li>
-                            Module 1: Design governance and compute solutions
-                          </li>
-                          <li>
-                            Module 2: Design storage and data integration
-                            solutions
-                          </li>
-                          <li>
-                            Module 3: Design app architecture, access, and
-                            monitoring solutions
-                          </li>
-                          <li>
-                            Module 4: Design network, continuity, and migration
-                            solutions
-                          </li>
-                        </ul>
-                      </div>
-
-                      <div
-                        class="course_footer d-flex align-items-center justify-content-start"
-                      >
-                        <div class="course_author_name">
-                          <a href="#">Read More....</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
 
             <!-- Course -->
             <div class="col-lg-4 col-md-6">
               <div class="course">
                 <div class="course_image">
-                  <img src="images/salesforce ai.jpg" alt="" width="250px" />
+                  <img src="images/course_12.jpg" alt="" width="250px" />
                 </div>
                 <div class="course_body">
                   <div class="course_title">
-                    <h3><a href="courses.html">Salesforce ai associate</a></h3>
+                    <h3>
+                      <a href="./courses/Designing Microsoft Azure Infrastructure Solutions.html"
+                        >Microsoft Certified: Azure Solutions Architect Expert</a
+                      >
+                    </h3>
                   </div>
                   <div class="course_text">
-                    Earners of this certification have a fundamental
-                    understanding of IT services and their uses in the AWS Cloud
+                    Earning the Azure Solutions Architect Expert certification demonstrates subject matter expertise in designing cloud and hybrid solutions that run on Microsoft Azure.
                   </div>
                   <div
                     class="course_footer d-flex flex-row align-items-center justify-content-start"
                   >
-                    <div data-modal-target="#modal9" class="course_tag">
-                      <a href="#">View Course Outline</a>
+                    <div class="course_tag">
+                      <a href="./courses/Designing Microsoft Azure Infrastructure Solutions.html">View Course Outline</a>
                     </div>
                     <div class="course_price ml-auto">
-                      Price: <span>$35</span>
+                      Price: <span>$500</span>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="modal1" id="modal9">
-                <div class="modal__wrapper">
-                  <button data-close-button class="close-btn">X</button>
-                  <div class="modal-pic">
-                    <img src="images/salesforce ai.jpg" alt="" width="250px" />
+
+            </div>
+
+            <!-- Course -->
+            <div class="col-lg-4 col-md-6">
+              <div class="course">
+                <div class="course_image">
+                  <img src="images/course_14.jpg" alt="" width="250px" />
+                </div>
+                <div class="course_body">
+                  <div class="course_title">
+                    <h3><a href="./courses/Salesforce ai associate.html">Salesforce AI – Associate</a></h3>
                   </div>
-                  <div class="modal-info">
-                    <div class="course_body">
-                      <div
-                        class="course_header d-flex flex-row align-items-center justify-content-start"
-                      ></div>
-                      <div class="course_title">
-                        <h3>
-                          <a href="courses.html">Salesforce ai associate </a>
-                        </h3>
-                      </div>
-                      <div class="course_text">
-                        Earners of this certification have a fundamental
-                        understanding of IT services and their uses in the AWS
-                        Cloud
-                      </div>
-                      <div
-                        class="dp d-flex flex-row align-items-center justify-content-start"
-                      >
-                        <div class="featured_tag"><a href="#">2 Weeks</a></div>
-                        <div class="featured_price ml-auto">
-                          Price: <span>$35</span>
-                        </div>
-                      </div>
-
-                      <div class="module__container">
-                        <h3>Salesforce ai associate Training​ Outline</h3>
-                        <ul>
-                          <li>Stage 1 : AI Fundamentals</li>
-                          <li>Stage 2 : AI Capabilities in CRM</li>
-                          <li>Stage 3 : Ethical Considerations of AI</li>
-                          <li>Stage 4 : Data for AI</li>
-                        </ul>
-                      </div>
-
-                      <div
-                        class="course_footer d-flex align-items-center justify-content-start"
-                      >
-                        <div class="course_author_name">
-                          <a href="#">Read More....</a>
-                        </div>
-                      </div>
+                  <div class="course_text">
+                    Salesforce launched Agentblazer Status, a new program designed to build and recognize your AI and Agentforce skills.
+                  </div>
+                  <div
+                    class="course_footer d-flex flex-row align-items-center justify-content-start"
+                  >
+                    <div class="course_tag">
+                      <a href="./courses/Salesforce ai associate.html">View Course Outline</a>
+                    </div>
+                    <div class="course_price ml-auto">
+                      Price: <span>$500</span>
                     </div>
                   </div>
                 </div>
               </div>
+
             </div>
           </div>
 
           <!-- Pagination -->
-          <div class="row">
+          <!-- <div class="row">
             <div class="col">
               <div class="courses_paginations">
                 <ul>
@@ -1874,7 +551,7 @@
                 </ul>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
 

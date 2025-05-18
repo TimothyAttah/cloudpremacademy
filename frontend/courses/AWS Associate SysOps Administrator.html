@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Courses</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Cloudprem Academy project" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../styles/bootstrap4/bootstrap.min.css"
+    />
+    <link
+      href="../plugins/font-awesome-4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="../plugins/video-js/video-js.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" type="text/css" href="../styles/courses.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../styles/courses_responsive.css"
+    />
+    <link rel="stylesheet" href="../styles/course_modal.css" />
+    <link rel="stylesheet" href="./courses_list.css">
+  </head>
+  <body>
+    <div class="super_container">
+      <!-- Header -->
+
+      <header class="header">
+        <!-- Top Bar -->
+        <div class="top_bar">
+          <div class="top_bar_container">
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <div
+                    class="top_bar_content d-flex flex-row align-items-center justify-content-start"
+                  >
+                    <ul class="top_bar_contact_list">
+                      <li><div class="question">Have any questions?</div></li>
+                      <li>
+                        <div>(009) 35475 6688933 32</div>
+                      </li>
+                      <li>
+                        <div>info@cloudpremacademy.com</div>
+                      </li>
+                    </ul>
+                    <div class="top_bar_login ml-auto">
+                      <ul>
+                        <li>
+                          <a href="../register.html">Register</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Header Content -->
+        <div class="header_container">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div
+                  class="header_content d-flex flex-row align-items-center justify-content-start"
+                >
+                  <div class="logo_container">
+                    <a href="#">
+                      <div
+                        class="logo_content d-flex flex-row align-items-end justify-content-start"
+                      >
+                        <div class="logo_img">
+                          <img src="../images/logo.png" alt="" />
+                        </div>
+                        <div class="logo_text">Cloudprem Academy</div>
+                      </div>
+                    </a>
+                  </div>
+                  <nav class="main_nav_contaner ml-auto">
+                    <ul class="main_nav">
+                      <li><a href="../index.html">home</a></li>
+                      <li><a href="../about.html">about us</a></li>
+                      <li><a href="../courses.html">courses</a></li>
+                      <li><a href="../news.html">news</a></li>
+                      <li><a href="../contact.html">contact</a></li>
+                    </ul>
+                    <!-- <div class="search_button"><i class="fa fa-search" aria-hidden="true"></i></div> -->
+
+                    <!-- Hamburger -->
+
+                    <div class="hamburger menu_mm">
+                      <i class="fa fa-bars menu_mm" aria-hidden="true"></i>
+                    </div>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Header Search Panel -->
+      </header>
+
+      <!-- Menu -->
+
+      <div
+        class="menu d-flex flex-column align-items-end justify-content-start text-right menu_mm trans_400"
+      >
+        <div class="menu_close_container">
+          <div class="menu_close">
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+
+        <nav class="menu_nav">
+          <ul class="menu_mm">
+            <li class="menu_mm"><a href="../index.html">Home</a></li>
+            <li class="menu_mm"><a href="../courses.html">Courses</a></li>
+            <li class="menu_mm"><a href="../instructors.html">Instructors</a></li>
+            <li class="menu_mm"><a href="#">Events</a></li>
+            <li class="menu_mm"><a href="../blog.html">Blog</a></li>
+            <li class="menu_mm"><a href="../contact.html">Contact</a></li>
+            <li class="menu_mm">
+              <a href="../register.html">Register</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="menu_extra">
+          <div class="menu_phone">
+            <span class="menu_title">phone:</span>(009) 35475 6688933 32
+          </div>
+          <div class="menu_social">
+            <span class="menu_title">follow us</span>
+            <ul>
+              <li>
+                <a href="#"
+                  ><i class="fa fa-pinterest" aria-hidden="true"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa fa-facebook" aria-hidden="true"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa fa-instagram" aria-hidden="true"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <!-- Home -->
+
+      <div class="courses_list_container">
+        <div class="container">
+          <div class="courses_list_img">
+            <img src="../images/course_4.jpg" alt="" width="250px" />
+          </div>
+          <div class="course_list_item_box">
+            <div class="course_title">
+              <h3><a href="#">AWS Certified SysOps Administrator – Associate</a></h3>
+            </div>
+            <div class="course_text">
+              Students that earns this certification have a comprehensive understanding on how to deploy, manage, and operate IT systems on the AWS Cloud.
+            </div>
+
+            <div
+              class=" reg_button-box"
+            >
+              <div class="featured_tag"><a href="#">2 Weeks</a></div>
+              <div class="featured_price">Price: <span>$500</span></div>
+              <div class="featured_tag"><a href="../register.html">Register for next cohort</a></div>
+            </div>
+
+            <div class="course_list_item_wrapper">
+              <h3>AWS Certified SysOps Administrator Training​ Course Outline</h3>
+              <ul>
+                <h4>
+                  Domain 1: Monitoring, Logging, and Remediation
+                </h4>
+                <li>
+                  IImplement Metrics, Alarms, and Filters by Using AWS
+                  Monitoring and
+                </li>
+                <li>Logging Services</li>
+                <li>Identify, Collect, Analyse, and Export Logs</li>
+                <li>
+                  Collect Metrics and Logs Using the CloudWatch Agent
+                </li>
+                <li>Create CloudWatch Alarms</li>
+                <li>Create Metric Filters</li>
+                <li>Create CloudWatch Dashboards</li>
+                <li>Configure Notifications</li>
+                <li>
+                  Remediate Issues Based on Monitoring and
+                  Availability Metrics
+                </li>
+                <li>
+                  Troubleshoot or Take Corrective Actions Based on
+                  Notifications and Alarms
+                </li>
+                <li>
+                  Configure Amazon Event Bridge Rules to Trigger
+                  Actions
+                </li>
+                <li>Use AWS Systems Manager Automation Documents</li>
+              </ul>
+              <ul>
+                <h4>Domain 2: Reliability and Business Continuity</h4>
+                <li>Implement Scalability and Elasticity</li>
+                <li>Create and Maintain AWS Auto Scaling Plans</li>
+                <li>Implement Caching</li>
+                <li>
+                  Implement Amazon RDS Replicas and Amazon Aurora
+                  Replicas
+                </li>
+                <li>Implement Loosely Coupled Architectures</li>
+                <li>
+                  Differentiate Between Horizontal Scaling and
+                  Vertical Scaling
+                </li>
+                <li>
+                  Implement High Availability and Resilient
+                  Environments
+                </li>
+                <li>
+                  Configure Elastic Load Balancer and Amazon Route 53
+                  Health Checks
+                </li>
+                <li>
+                  Differentiate Between the Use of a Single
+                  Availability Zone and Multi-AZ Deployments
+                </li>
+                <li>Implement Fault-Tolerant Workloads</li>
+                <li>Implement Route 53 Routing Policies</li>
+                <li>Implement Backup and Restore Strategies</li>
+                <li>
+                  Automate Snapshots and Backups Based on Use Cases
+                </li>
+                <li>Restore Databases</li>
+                <li>Implement Versioning and Lifecycle Rules</li>
+                <li>Configure Amazon S3 Cross-Region Replication</li>
+                <li>Execute Disaster Recovery Procedures</li>
+              </ul>
+              <ul>
+                <h4>
+                  Domain 3: Deployment, Provisioning, and Automation
+                </h4>
+                <li>Provision and Maintain Cloud Resources</li>
+                <li>Create and Manage AMIs</li>
+                <li>
+                  Create, Manage, and Troubleshoot AWS CloudFormation
+                </li>
+                <li>
+                  Provision Resources Across Multiple AWS Regions and
+                  Accounts
+                </li>
+                <li>Select Deployment Scenarios and Services</li>
+                <li>Identify and Remediate Deployment Issues</li>
+                <li>Automate Manual or Repeatable Processes</li>
+                <li>Use AWS Services</li>
+                <li>Implement Automated Patch Management</li>
+                <li>
+                  Schedule Automated Tasks by Using AWS Services
+                </li>
+              </ul>
+              <ul>
+                <h4>Domain 4: Security and Compliance</h4>
+                <li>
+                  Implement and Manage Security and Compliance
+                  Policies
+                </li>
+                <li>Implement IAM Features</li>
+                <li>
+                  Troubleshoot and Audit Access Issues by Using AWS
+                  Services
+                </li>
+                <li>
+                  Validate Service Control Policies and Permissions
+                  Boundaries
+                </li>
+                <li>Review AWS Trusted Advisor Security Checks</li>
+                <li>
+                  Validate AWS Region and Service Selections Based on
+                  Compliance Requirements
+                </li>
+                <li>
+                  Implement Data and Infrastructure Protection
+                  Strategies
+                </li>
+                <li>Enforce a Data Classification Scheme</li>
+                <li>Create, Manage, and Protect Encryption Keys</li>
+                <li>Implement Encryption at Rest and in Transit</li>
+                <li>Securely Store Secrets by Using AWS Services</li>
+                <li>Review Reports or Findings</li>
+              </ul>
+              <ul>
+                <h4>Domain 5: Networking and Content Delivery</h4>
+                <li>
+                  Implement Networking Features and Connectivity
+                </li>
+                <li>Configure a VPC</li>
+                <li>VPC CIDR Block</li>
+                <li>Subnets</li>
+                <li>Elastic Network Interfaces</li>
+                <li>Features of Elastic Network Interfaces</li>
+                <li>Internet Gateway</li>
+                <li>Route Tables</li>
+                <li>VPC Security Groups</li>
+                <li>Network Access Control Lists (NACLs)</li>
+                <li>Difference Between SG and NACL</li>
+                <li>Network Address Translation</li>
+                <li>VPC Hands-On</li>
+                <li>Configure AWS Network Protection Services</li>
+                <li>
+                  Configure Domains, DNS Services, and Content
+                  Delivery
+                </li>
+                <li>Configure Route 53 Hosted Zones and Records</li>
+                <li>Implement Route 53 Routing Policies</li>
+                <li>Configure DNS</li>
+                <li>
+                  Configure Amazon CloudFront and S3 Origin Access
+                  Identity (OAI)
+                </li>
+                <li>Configure S3 Static Website Hosting</li>
+                <li>Troubleshoot Network Connectivity Issues</li>
+                <li>Interpret VPC Configurations</li>
+                <li>Collect and Interpret Logs</li>
+              </ul>
+              <ul>
+                <h4>Domain 6: Cost and Performance Optimization</h4>
+                <li>Implement Cost Optimisation Strategies</li>
+                <li>Implement Cost Allocation Tags</li>
+                <li>
+                  Identify and Remediate Underutilised or Unused
+                  Resources by Using AWS Services and Tools
+                </li>
+                <li>Configure AWS Budgets and Billing Alarms</li>
+                <li>
+                  Identify Opportunities to Use Managed Services
+                </li>
+                <li>Implement Performance Optimisation Strategies</li>
+                <li>
+                  Recommend Compute Resources Based on Performance
+                  Metrics
+                </li>
+                <li>
+                  Monitor Amazon EBS Metrics and Modify Configuration
+                  to Increase Performance Efficiency
+                </li>
+                <li>Implement S3 Performance Features</li>
+                <li>
+                  Monitor RDS Metrics and Modify the Configuration to
+                  Increase Performance Efficiency
+                </li>
+                <li>Enable Enhanced EC2 Capabilities</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <!-- About -->
+            <div class="col-lg-3 footer_col">
+              <div class="footer_about">
+                <div class="logo_container">
+                  <a href="#">
+                    <div
+                      class="logo_content d-flex flex-row align-items-end justify-content-start"
+                    >
+                      <div class="logo_img">
+                        <img src="images/logo.png" alt="" />
+                      </div>
+                      <div class="logo_text">Cloudprem Academy</div>
+                    </div>
+                  </a>
+                </div>
+                <div class="footer_about_text">
+                  <p>
+                    You can interact face-to-face with vendor-certified trainers
+                    at our training facilities or attend the same instructor-led
+                    live camp online..
+                  </p>
+                </div>
+                <div class="footer_social">
+                  <ul>
+                    <li>
+                      <a href="#"
+                        ><i class="fa fa-google-plus" aria-hidden="true"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fa fa-pinterest" aria-hidden="true"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fa fa-facebook" aria-hidden="true"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fa fa-twitter" aria-hidden="true"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="copyright">
+                  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                  Copyright &copy;
+                  <script>
+                    document.write(new Date().getFullYear());
+                  </script>
+                  All rights reserved | This template is made with
+                  <i class="fa fa-heart-o" aria-hidden="true"></i> by
+                  <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 footer_col">
+              <div class="footer_links">
+                <div class="footer_title">Quick menu</div>
+                <ul class="footer_list">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About us</a></li>
+
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-lg-3 footer_col">
+              <div class="footer_links">
+                <div class="footer_title">Useful Links</div>
+                <ul class="footer_list">
+                  <li><a href="courses.html">Courses</a></li>
+                  <li><a href="#">Events</a></li>
+                  <li><a href="news.html">News</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-lg-3 footer_col">
+              <div class="footer_contact">
+                <div class="footer_title">Contact Us</div>
+                <div class="footer_contact_info">
+                  <div class="footer_contact_item">
+                    <div class="footer_contact_title">Email:</div>
+                    <div class="footer_contact_line">
+                      info@cloudpremacademy.com
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../styles/bootstrap4/popper.js"></script>
+    <script src="../styles/bootstrap4/bootstrap.min.js"></script>
+    <script src="../plugins/easing/easing.js"></script>
+    <script src="../plugins/parallax-js-master/parallax.min.js"></script>
+    <script src="../https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCIwF204lFZg1y4kPSIhKaHEXMLYxxuMhA"></script>
+    <script src="../js/contact.js"></script>
+    <script src="../js/course_modal.js"></script>
+  </body>
+</html>

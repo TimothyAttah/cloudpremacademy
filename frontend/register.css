@@ -1,0 +1,17 @@
+.register_box-wrapper {
+  max-width: 600px;
+  width: 100%;
+  margin: auto;
+  padding: 0 20px;
+  padding-top: 200px;
+  padding-bottom: 50px;
+}
+
+.register_box-wrapper input, .register_box-wrapper select {
+  width: 100%;
+}
+
+.register_box-wrapper button {
+  width: 100%;
+  margin-top: 20px;
+}

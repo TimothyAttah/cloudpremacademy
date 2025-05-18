@@ -1,0 +1,28 @@
+.courses_list_container {
+  padding-top: 200px;
+  max-width: 600px;
+  width: 100%;
+  margin: auto;
+}
+
+.courses_list_img {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.course_list_item_wrapper ul{
+  margin-bottom: 14px;
+}
+
+.reg_button-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  flex-wrap: wrap;
+  gap:20px;
+}
