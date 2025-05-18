@@ -85,17 +85,9 @@ btnSubmit.addEventListener('click', (e) => {
   };
 
   fetch('https://cloudpremacademy-49q2.vercel.app/api/auth/register', {
-    // method: 'POST',
-    // headers: {
-    //   'Content-Type': 'application/json',
-    // },
-    mode: 'no-cors',
     method: 'POST',
     headers: {
-      'Access-Control-Allow-Headers': 'Content-Type',
-      'Access-Control-Allow-Origin': '*',
       'Content-Type': 'application/json',
-      'Access-Control-Allow-Methods': 'POST,GET,PATCH',
     },
     body: JSON.stringify(newStudent),
   })
