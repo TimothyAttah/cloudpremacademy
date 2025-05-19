@@ -1,30 +1,26 @@
 import Contact from '../models/contactModel.js';
 
- const contactControllers = {
+const contactControllers = {
   contactMessage: async (req, res) => {
     try {
-      const { firstName, lastName, phoneNumber, email, message } = req.body;
+      const { name, subject, email, message } = req.body;
 
-      if (!firstName)
-        return res.status(400).json({ msg: 'Please enter your first name.' });
-
-      if (!lastName)
-        return res.status(400).json({ msg: 'Please enter your last name.' });
+      if (!name)
+        return res.status(400).json({ msg: 'Please enter your name.' });
 
       if (!email)
         return res.status(400).json({ msg: 'Please enter your email.' });
 
-      if (!phoneNumber)
-        return res.status(400).json({ msg: 'Please enter your phone number.' });
+      if (!subject)
+        return res.status(400).json({ msg: 'Please enter a subject title.' });
 
       if (!message)
-        return res.status(400).json({ msg: 'Please choose a country.' });
+        return res.status(400).json({ msg: 'Please enter your message.' });
 
       const newContact = new Contact({
-        firstName,
-        lastName,
+        name,
         email,
-        phoneNumber,
+        subject,
         message,
       });
 
