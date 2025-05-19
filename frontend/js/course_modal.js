@@ -105,3 +105,4 @@ btnSubmit.addEventListener('click', (e) => {
 
   console.log(newStudent);
 });
+

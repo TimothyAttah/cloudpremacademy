@@ -1,4 +1,4 @@
-import User from '../models/userModel.js';
+import Student from '../models/userModel.js';
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 
@@ -17,16 +17,7 @@ const authControllers = {
         sa_time,
       } = req.body;
 
-      // if (
-      //   !firstName ||
-      //   !lastName ||
-      //   !email ||
-      //   !phoneNumber ||
-      //   !country ||
-      //   !course
-      // )
-      // return res.status(400).json({ msg: 'Please fill in all fields.' });
-
+      
       if (!firstName)
         return res.status(400).json({ msg: 'Please enter your first name.' });
 
@@ -48,11 +39,11 @@ const authControllers = {
       if (!nigeria_time && !uk_time && !sa_time)
         return res.status(400).json({ msg: 'Please choose a timezone.' });
 
-      const user = await User.findOne({ email });
-      if (user)
+      const student = await Student.findOne({ email });
+      if (student)
         return res.status(400).json({ msg: 'This email already exists.' });
 
-      const newUser = new User({
+      const newStudent = new Student({
         firstName,
         lastName,
         email,
@@ -64,11 +55,11 @@ const authControllers = {
         sa_time,
       });
 
-      await newUser.save();
+      await newStudent.save();
 
       return res
         .status(201)
-        .json({ msg: 'Sign up was successful.', data: newUser });
+        .json({ msg: 'Sign up was successful.', data: newStudent });
     } catch (err) {
       return res.status(500).json({ msg: err.message });
     }

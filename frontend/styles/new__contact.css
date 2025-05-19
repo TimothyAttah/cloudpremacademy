@@ -1,0 +1,24 @@
+.new__contact-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 30px;
+
+}
+
+.new__contact-info {
+  max-width: 400px;
+}
+
+.new__contact-form {
+  max-width: 400px;
+}
+
+@media screen and (max-width: 990px) {
+  .new__contact-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+  }
+}
