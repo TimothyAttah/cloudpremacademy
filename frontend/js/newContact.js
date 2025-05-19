@@ -14,6 +14,8 @@ contactBtn.addEventListener('click', (e) => {
     message: message.value,
   };
 
+  
+
   fetch('https://cloudpremacademy-49q2.vercel.app/api/contact/message', {
     method: 'POST',
     headers: {
