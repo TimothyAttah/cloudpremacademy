@@ -12,12 +12,12 @@ const authControllers = {
         phoneNumber,
         country,
         course,
-        nigeria_time,
+        us_central_time,
+        us_eastern_time,
         uk_time,
         sa_time,
       } = req.body;
 
-      
       if (!firstName)
         return res.status(400).json({ msg: 'Please enter your first name.' });
 
@@ -36,7 +36,7 @@ const authControllers = {
       if (!course)
         return res.status(400).json({ msg: 'Please choose a course.' });
 
-      if (!nigeria_time && !uk_time && !sa_time)
+      if (!us_central_time && !us_eastern_time && !uk_time && !sa_time)
         return res.status(400).json({ msg: 'Please choose a timezone.' });
 
       const student = await Student.findOne({ email });
@@ -50,7 +50,8 @@ const authControllers = {
         phoneNumber,
         country,
         course,
-        nigeria_time,
+        us_central_time,
+        us_eastern_time,
         uk_time,
         sa_time,
       });

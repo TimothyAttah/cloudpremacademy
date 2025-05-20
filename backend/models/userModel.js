@@ -25,7 +25,10 @@ const StudentSchema = new mongoose.Schema(
     course: {
       type: String,
     },
-    nigeria_time: {
+    us_eastern_time: {
+      type: String,
+    },
+    us_central_time: {
       type: String,
     },
     uk_time: {

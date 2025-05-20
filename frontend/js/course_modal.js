@@ -68,7 +68,9 @@ btnSubmit.addEventListener('click', (e) => {
   const phoneNumber = document.querySelector('.phoneNumber');
   const country = document.querySelector('.country');
   const course = document.querySelector('.course');
-  const nigeria_time = document.querySelector('.nigeria_time');
+  const us_central_time = document.querySelector('.us_central_time');
+  const us_eastern_time = document.querySelector('.us_eastern_time');
+
   const uk_time = document.querySelector('.uk_time');
   const sa_time = document.querySelector('.sa_time');
 
@@ -79,12 +81,13 @@ btnSubmit.addEventListener('click', (e) => {
     phoneNumber: phoneNumber.value,
     country: country.value,
     course: course.value,
-    nigeria_time: nigeria_time.value,
+    us_central_time: us_central_time.value,
+    us_eastern_time: us_eastern_time.value,
     uk_time: uk_time.value,
     sa_time: sa_time.value,
   };
 
-  fetch('https://cloudpremacademy-49q2.vercel.app/api/auth/register', {
+  fetch('https://cloudpremacademy-backend.vercel.app/api/auth/register', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -105,4 +108,3 @@ btnSubmit.addEventListener('click', (e) => {
 
   console.log(newStudent);
 });
-
