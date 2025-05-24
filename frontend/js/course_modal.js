@@ -87,24 +87,44 @@ btnSubmit.addEventListener('click', (e) => {
     sa_time: sa_time.value,
   };
 
-  fetch('https://cloudpremacademy-backend.vercel.app/api/auth/register', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(newStudent),
-  })
-    .then((res) => {
-      return res.json();
+  // fetch('https://cloudpremacademy-backend.vercel.app/api/auth/register', {
+  //   method: 'POST',
+  //   headers: {
+  //     'Content-Type': 'application/json',
+  //   },
+  //   body: JSON.stringify(newStudent),
+  // })
+  //   .then((res) => {
+  //     return res.json();
+  //   })
+  //   .then((data) => {
+  //     console.log(data);
+  //     alert(data.msg);
+  //   })
+  //   .catch((err) => {
+  //     console.log(err.message);
+  //     alert(err.message);
+  //   });
+
+    fetch('https://cloudpremacademy-backend.vercel.app/api/auth/register', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(newStudent),
     })
-    .then((data) => {
-      console.log(data);
-      alert(data.msg);
-    })
-    .catch((err) => {
-      console.log(err.message);
-      alert(err.message);
-    });
+      .then((res) => {
+        return res.json();
+      })
+      .then((data) => {
+        console.log(data);
+        alert(data.msg);
+        localStorage.setItem('student', JSON.stringify(data.data));
+      })
+      .catch((err) => {
+        console.log(err.message);
+        alert(err.message);
+      });
 
   console.log(newStudent);
 });

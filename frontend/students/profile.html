@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Courses</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Cloudprem Academy project" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../styles/bootstrap4/bootstrap.min.css"
+    />
+    <link
+      href="../plugins/font-awesome-4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="../plugins/video-js/video-js.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" type="text/css" href="../styles/courses.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../styles/courses_responsive.css"
+    />
+
+    <link rel="stylesheet" href="./dashboard.css" />
+  </head>
+
+  <body>
+    <div class="super_container">
+      <header class="header">
+        <!-- Header Content -->
+        <div class="header_container">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div
+                  class="header_content d-flex flex-row align-items-center justify-content-start"
+                >
+                  <div class="logo_container">
+                    <a href="#">
+                      <div
+                        class="logo_content d-flex flex-row align-items-end justify-content-start"
+                      >
+                        <div class="logo_img">
+                          <img src="../images/logo.png" alt="" />
+                        </div>
+                        <div class="logo_text">Cloudprem Academy</div>
+                      </div>
+                    </a>
+                  </div>
+                  <nav class="main_nav_contaner ml-auto">
+                    <ul class="main_nav">
+                      <li><a href="../index.html">home</a></li>
+                      <li><a href="../about.html">about us</a></li>
+                      <li><a href="../courses.html">courses</a></li>
+                      <li><a href="../news.html">news</a></li>
+                      <li><a href="../contact.html">contact</a></li>
+                    </ul>
+
+                    <!-- Hamburger -->
+
+                    <div class="hamburger menu_mm">
+                      <i class="fa fa-bars menu_mm" aria-hidden="true"></i>
+                    </div>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Header Search Panel -->
+      </header>
+
+      <div
+        class="menu d-flex flex-column align-items-end justify-content-start text-right menu_mm trans_400"
+      >
+        <div class="menu_close_container">
+          <div class="menu_close">
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+
+        <nav class="menu_nav">
+          <ul class="menu_mm">
+            <li class="menu_mm"><a href="../index.html">Home</a></li>
+            <li class="menu_mm"><a href="../about.html">About Us</a></li>
+            <li class="menu_mm"><a href="../courses.html">Courses</a></li>
+            <li class="menu_mm"><a href="../news.html">News</a></li>
+            <li class="menu_mm"><a href="../contact.html">Contact</a></li>
+            <li class="menu_mm"><a href="../register.html">Register</a></li>
+          </ul>
+        </nav>
+        <div class="menu_extra">
+          <div class="menu_phone">
+            <span class="menu_title">phone:</span>(009) 35475 6688933 32
+          </div>
+          <div class="menu_social">
+            <span class="menu_title">follow us</span>
+            <ul>
+              <li>
+                <a href="#"
+                  ><i class="fa fa-pinterest" aria-hidden="true"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa fa-facebook" aria-hidden="true"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa fa-instagram" aria-hidden="true"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="welcome__student_container">
+        <div class="welcome__student">
+          <div class="student__name_initial">
+            <span class="student__firstname_initial"></span>
+            <span class="student__lastname_initial"></span>
+          </div>
+          <div class="student__name-box">
+            <small>Hello,</small>
+
+            <div class="student__name">
+              <h4 class="first_name"></h4>
+              <h4 class="last_name"></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dashboard__container">
+        <div class="dashboard__menu_wrapper">
+          <ul class="dashboard__menu">
+            <li>
+              <a href="./dashboard.html">
+                <img src="../images/student_dashboard.png" alt="" />
+                <span>dashboard</span></a
+              >
+            </li>
+            <li class="active">
+              <a href="#">
+                <img src="../images/student_profile.png" alt="" />
+                <span>My profile</span></a
+              >
+            </li>
+            <li>
+              <a href="./courses.html">
+                <img src="../images/student_course.png" alt="" />
+                <span>courses</span></a
+              >
+            </li>
+          </ul>
+          <div class="dashboard_student_settings">
+            <ul>
+              <!-- <li>
+                <a href="./settings.html">
+                  <img src="../images/student_settings.png" alt="" />
+                  <span>settings</span></a
+                >
+              </li> -->
+              <li>
+                <button type="button" id="logout__btn">
+                  <img src="../images/student_logout.png" alt="" />
+                  <span>Logout</span>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="dashboard__info_container">
+          <h4>My Profile</h4>
+          <div class="profile_info_wrapper">
+            <div class="profile_info">
+              <p>Registration Date</p>
+              <span class="profile_reg_date"></span>
+            </div>
+            <div class="profile_info">
+              <p>First Name</p>
+              <span class="profile_first_name"></span>
+            </div>
+            <div class="profile_info">
+              <p>Last Name</p>
+              <span class="profile_last_name"></span>
+            </div>
+            <div class="profile_info">
+              <p>Email</p>
+              <span class="profile_email"></span>
+            </div>
+            <div class="profile_info">
+              <p>Phone Number</p>
+              <span class="profile_phone_number"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const student = JSON.parse(localStorage.getItem('student'));
+      let first_name = document.querySelector('.first_name');
+      let last_name = document.querySelector('.last_name');
+
+      let first_name_letter = (first_name.innerHTML = student.firstName);
+      let last_name_letter = (last_name.innerHTML = student.lastName);
+
+      let first_name_initial = String(first_name_letter).slice(0, 1);
+
+      let last_name_initial = String(last_name_letter).slice(0, 1);
+
+      document.querySelector('.student__firstname_initial').textContent =
+        first_name_initial;
+      document.querySelector('.student__lastname_initial').textContent =
+        last_name_initial;
+
+      let profile_reg_date = document.querySelector('.profile_reg_date');
+      let profile_first_name = document.querySelector('.profile_first_name');
+      let profile_last_name = document.querySelector('.profile_last_name');
+
+      let profile_email = document.querySelector('.profile_email');
+      let profile_phone_number = document.querySelector(
+        '.profile_phone_number',
+      );
+
+      profile_reg_date.textContent = Date.apply(student.createdAt);
+      profile_first_name.textContent = student.firstName;
+      profile_last_name.textContent = student.lastName;
+      profile_email.textContent = student.email;
+      profile_phone_number.textContent = student.phoneNumber;
+
+      //logout
+      let logout__btn = document.getElementById('logout__btn');
+
+      logout__btn.addEventListener('click', () => {
+        localStorage.removeItem('student');
+        window.location.href = '../index.html';
+      });
+
+      console.log(student);
+    </script>
+  </body>
+</html>
