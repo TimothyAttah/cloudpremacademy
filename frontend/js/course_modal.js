@@ -106,25 +106,30 @@ btnSubmit.addEventListener('click', (e) => {
   //     alert(err.message);
   //   });
 
-    fetch('https://cloudpremacademy-backend.vercel.app/api/auth/register', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(newStudent),
+  fetch('https://cloudpremacademy-backend.vercel.app/api/auth/register', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(newStudent),
+  })
+    .then((res) => {
+      return res.json();
     })
-      .then((res) => {
-        return res.json();
-      })
-      .then((data) => {
-        console.log(data);
-        alert(data.msg);
-        localStorage.setItem('student', JSON.stringify(data.data));
-      })
-      .catch((err) => {
-        console.log(err.message);
-        alert(err.message);
-      });
+    .then((data) => {
+      console.log(data);
+      localStorage.setItem('student', JSON.stringify(data.data));
+      alert(data.msg);
+
+      if (data.data !== undefined) {
+        alert('Thank you for your registration!!!');
+        window.location.href = 'index.html';
+      }
+    })
+    .catch((err) => {
+      console.log(err.message);
+      alert(err.message);
+    });
 
   console.log(newStudent);
 });
